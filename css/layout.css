@@ -1,0 +1,41 @@
+header {
+  width: 100%;
+  height: auto; }
+  header .line-v {
+    width: 1px;
+    height: 10px;
+    background-color: #fff;
+    margin: 0 5px; }
+
+.wrap-content {
+  background-color: #f9f9f9; }
+
+.footer {
+  background-color: #f36e4b;
+  height: auto;
+  padding: 55px 0 55px;
+  color: #fff; }
+  .footer a {
+    color: #fff; }
+  .footer--container {
+    position: relative; }
+  .footer--img {
+    position: absolute;
+    bottom: 10px; }
+  .footer--fo1 {
+    left: -170px; }
+  .footer--fo2 {
+    right: -170px; }
+  .footer--secon {
+    padding-left: 35px; }
+  .footer--i a {
+    margin-right: 15px; }
+    .footer--i a i {
+      font-size: 18px; }
+  .footer--four img {
+    max-width: 100%;
+    height: auto; }
+  .footer--end {
+    margin-top: 40px; }
+
+/*# sourceMappingURL=layout.css.map */

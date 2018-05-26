@@ -1,0 +1,73 @@
+.bgc-orange {
+  background-color: #f36e4b; }
+
+.color-orange {
+  color: #f36e4b; }
+
+.bgc-blue {
+  background-color: #23a1f1; }
+
+.color-blue {
+  color: #23a1f1; }
+
+.c-pointer {
+  cursor: pointer; }
+
+.color-white {
+  color: #fff; }
+
+.bgc-white {
+  color: #fff; }
+
+.fontw-bold {
+  font-weight: 700; }
+
+.pdlr-15 {
+  padding: 0 15px; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.mrt-0 {
+  margin-top: 0; }
+
+.mrl-0 {
+  margin-left: 0; }
+
+.mrr-0 {
+  margin-right: 0; }
+
+.mrb-0 {
+  margin-bottom: 0; }
+
+.mrt-25 {
+  margin-top: 25px; }
+
+.mrt-30 {
+  margin-top: 30px; }
+
+.mrt-35 {
+  margin-top: 35px; }
+
+.mrt-50 {
+  margin-top: 50px; }
+
+.mrt-60 {
+  margin-top: 60px; }
+
+.mrt-70 {
+  margin-top: 70px; }
+
+.mrt-80 {
+  margin-top: 80px; }
+
+.mrt-85 {
+  margin-top: 85px; }
+
+.pdb-85px {
+  padding-bottom: 85px; }
+
+/*# sourceMappingURL=variable.css.map */

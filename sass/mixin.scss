@@ -1,0 +1,10 @@
+@mixin line-v($bgc, $height){
+  width: 1px;
+  height: $height;
+  background-color: $bgc;
+}
+@mixin line-h($bgc, $width){
+  height: 1px;
+  width: $width;
+  background-color: $bgc;
+}
