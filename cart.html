@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>BOOK DETAIL</title>
+    <title>CART</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/fontawesome-all.css">
@@ -15,7 +15,7 @@
     <script src="js/slick.js"></script>
     <script src="js/basejs.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <script src="js/book-list.js"></script>
+    <script src="js/bookdetail.js"></script>
 </head>
 <body>
 
@@ -97,7 +97,7 @@
     </div>
 </section>
 
-<section class="wrap-content">
+<section class="wrap-content wrap-content-cart">
     <div class="container-fluid pdb-85px">
         <div class="row hbook hbook-list" >
             <div class="container">
@@ -108,287 +108,179 @@
                     <span>/</span>
                     <span class="color-blue">Sinh học</span>
                 </p>
-                <p class="hbook-list--filter">
-                    <span class="active">Nổi bật</span>
-                    <span class="">Mới nhất</span>
-                    <span class="">Giá tăng dần</span>
-                    <span class="">Giá giảm dần</span>
-                    <span class="">A - Z</span>
-                    <span class="">Z - A</span>
-                </p>
                 <div class="clearfix"></div>
                 <img class="book-detail--imgab img1 " src="img/icon/bgc1.png" />
                 <img class="book-detail--imgab img2 " src="img/icon/bgc2.png" />
                 <img class="book-detail--imgab img3 " src="img/icon/bgc3.png"/>
                 <img class="book-detail--imgab img4 " src="img/icon/bgc4.png"/>
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
-                                </p>
-                            </div>
-                        </div>      <!--book--item-->
+                <div class="cart-content">
+
+                    <div class="book-detail--social">
+                        <div class="number-twitter number">241</div>
+                        <div class="twitter-like like"><i class="fab fa-twitter"></i>Tweet</div>
+                        <div class="number-facebook number"><i class="far fa-thumbs-up"></i>20</div>
+                        <div class="facebook-like like"><i class="fab fa-facebook-square"></i> Like</div>
+                        <div class="number-google number">118</div>
+                        <div class="google-like like">+1</div>
                     </div>
 
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
+                    <div class="row">
+                        <div class="col-md-9 ">
+                            <div class="cart-content--left">
+                                <div class="hbook__img">
+                                    <a href="#" class="text-center">
+                                        <img src="img/slide/book1.png"/>
+                                    </a>
+                                </div>
+                                <div class="cart-content--text">
+                                    <div class="book-detail__name cart-content__name">
+                                        <p class="name-book"> Inuyasha - Tập 2 (Bản Đặc Biệt)</p>
+                                        <p class="">Tác giả</span>&emsp;&emsp;&nbsp;: <a href="#">Thầy Dương Văn Cẩn</a></p>
+                                        <p class="">Danh mục&emsp;: <a href="#">Sinh học</a></p>
+                                    </div>
+                                    <div class="book-detail__price cart-content__price">
+                                        <p><span class="fontw-bold">54.000 VNĐ</span> <span>Đã có VAT</span></p>
+                                        <p>Tiết kiệm: 10%(6000 <span class="text-under">đ</span></p>
+                                        <p>Giá thị trường 60.000 <span class="text-under">đ</span></p>
+                                        <div class="book-detail__number ">
+                                            <div class="border-buy">
+                                                <button class="btn btn-minus"><i class="fas fa-minus"></i></button>
+                                                <span class="span-number">1</span>
+                                                <button class="btn btn-plus"><i class="fas fa-plus"></i></button>
+                                            </div>
+                                            <i class="fas fa-window-close"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      <!--  cart-content--left  -->
+                        </div>      <!--  col-md-9  -->
+
+                        <div class="col-md-3 ">
+                            <div class="cart-content--right">
+                                <p>
+                                    <span class="float-left">Tài khoản:</span><span class="float-right">Huy Phạm</span>
+                                    <span class="clearfix"></span>
                                 </p>
-                            </div>
-                        </div>      <!--book--item-->
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
+                                <p>
+                                    <span class="float-left">Số dư:</span><span class="float-right">0 kin</span>
+                                    <span class="clearfix"></span>
                                 </p>
-                            </div>
-                        </div>      <!--book--item-->
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
+                                <p>
+                                    <span class="float-left">Tạm tính:</span><span class="float-right">100.000 đ</span>
+                                    <span class="clearfix"></span>
                                 </p>
-                            </div>
-                        </div>      <!--book--item-->
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
+                                <p>
+                                    <span class="float-left">Giảm giá:</span><span class="float-right">0 đ</span>
+                                    <span class="clearfix"></span>
                                 </p>
-                            </div>
-                        </div>      <!--book--item-->
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
+                                <p>
+                                    <span class="float-left">Phí giao hàng:</span><span class="float-right">0 đ</span>
+                                    <span class="clearfix"></span>
                                 </p>
-                            </div>
-                        </div>      <!--book--item-->
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
+                                <p>
+                                    <span class="float-left">Thành tiền:</span><span class="float-right">0 đ</span>
+                                    <span class="clearfix"></span>
                                 </p>
-                            </div>
-                        </div>      <!--book--item-->
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
+                                <p class="text-center">
+                                    <a href="#" class="btn btn-buybook">
+                                        <i class="fas fa-cart-plus"></i> Mua sách
+                                    </a>
                                 </p>
-                            </div>
-                        </div>      <!--book--item-->
-                    </div>
 
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
-                                </p>
-                            </div>
-                        </div>      <!--book--item-->
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
-                                </p>
-                            </div>
-                        </div>      <!--book--item-->
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
-                                </p>
-                            </div>
-                        </div>      <!--book--item-->
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="hbook--item book-list">
-                            <div class="hbook__img">
-                                <a href="#" class="text-center">
-                                    <img src="img/slide/book1.png"/>
-                                </a>
-                            </div>
-                            <div class="pdlr-15">
-                                <a href="#" class="hbook__name">
-                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
-                                </a>
-                                <a href="#" class="hbook__writer">
-                                    Thầy Dương Văn Cẩn
-                                </a>
-                                <p class="hbook__fee">
-                                    Giá: <span>800.000.000đ</span>
-                                </p>
-                            </div>
-                        </div>      <!--book--item-->
-                    </div>
-
-                </div>      <!-- row -->
-
-                <div class="book-list--pagination">
-                    <ul class="pagination">
-                        <li><a href="#">1</a></li>
-                        <li class="active"><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                    </ul>
+                            </div>      <!--  cart-content--right  -->
+                        </div>      <!-- col-md-3 -->
+                    </div>      <!-- row -->
+                    <div class="clearfix"></div>
                 </div>
 
-            </div>      <!-- container  -->
+                <h6 class="po-relative mrt-30">Sách đã xem</h6>
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="hbook--item book-list">
+                            <div class="hbook__img">
+                                <a href="#" class="text-center">
+                                    <img src="img/slide/book1.png"/>
+                                </a>
+                            </div>
+                            <div class="pdlr-15">
+                                <a href="#" class="hbook__name">
+                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                </a>
+                                <a href="#" class="hbook__writer">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="hbook__fee">
+                                    Giá: <span>800.000.000đ</span>
+                                </p>
+                            </div>
+                        </div>      <!--book--item-->
+                    </div>
 
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="hbook--item book-list">
+                            <div class="hbook__img">
+                                <a href="#" class="text-center">
+                                    <img src="img/slide/book1.png"/>
+                                </a>
+                            </div>
+                            <div class="pdlr-15">
+                                <a href="#" class="hbook__name">
+                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                </a>
+                                <a href="#" class="hbook__writer">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="hbook__fee">
+                                    Giá: <span>800.000.000đ</span>
+                                </p>
+                            </div>
+                        </div>      <!--book--item-->
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="hbook--item book-list">
+                            <div class="hbook__img">
+                                <a href="#" class="text-center">
+                                    <img src="img/slide/book1.png"/>
+                                </a>
+                            </div>
+                            <div class="pdlr-15">
+                                <a href="#" class="hbook__name">
+                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                </a>
+                                <a href="#" class="hbook__writer">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="hbook__fee">
+                                    Giá: <span>800.000.000đ</span>
+                                </p>
+                            </div>
+                        </div>      <!--book--item-->
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="hbook--item book-list">
+                            <div class="hbook__img">
+                                <a href="#" class="text-center">
+                                    <img src="img/slide/book1.png"/>
+                                </a>
+                            </div>
+                            <div class="pdlr-15">
+                                <a href="#" class="hbook__name">
+                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                </a>
+                                <a href="#" class="hbook__writer">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="hbook__fee">
+                                    Giá: <span>800.000.000đ</span>
+                                </p>
+                            </div>
+                        </div>      <!--book--item-->
+                    </div>
+                </div>      <!-- row -->
+            </div>      <!-- container  -->
         </div>  <!--  hbook  -->
     </div>
 

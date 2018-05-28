@@ -10,6 +10,9 @@ header{
 
 .wrap-content{
   background-color: #f9f9f9;
+  &.wrap-content-cart{
+    min-height: 1000px;
+  }
 }
 
 #modal-signin{

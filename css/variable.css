@@ -25,6 +25,9 @@
 .text-under {
   text-decoration: underline; }
 
+.po-relative {
+  position: relative; }
+
 h6 {
   font-size: 24px;
   text-transform: uppercase; }

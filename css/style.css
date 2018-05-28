@@ -77,6 +77,9 @@ ul {
 .text-under {
   text-decoration: underline; }
 
+.po-relative {
+  position: relative; }
+
 h6 {
   font-size: 24px;
   text-transform: uppercase; }
@@ -143,6 +146,8 @@ header {
 
 .wrap-content {
   background-color: #f9f9f9; }
+  .wrap-content.wrap-content-cart {
+    min-height: 1000px; }
 
 #modal-signin {
   overflow: hidden; }
@@ -201,6 +206,9 @@ header {
 
 .text-under {
   text-decoration: underline; }
+
+.po-relative {
+  position: relative; }
 
 h6 {
   font-size: 24px;
@@ -884,6 +892,52 @@ h6 {
     text-align: center; }
     .book-list--pagination ul li a {
       margin: 0 3px; }
+
+.cart-content {
+  position: relative; }
+  .cart-content--left {
+    padding: 25px 25px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 15px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #eeeeee; }
+    .cart-content--left .hbook__img {
+      width: 30%;
+      border-radius: 0;
+      float: left;
+      margin-right: 20px; }
+  .cart-content--text .book-detail__name {
+    border: 0;
+    padding-bottom: 10px; }
+  .cart-content--text .book-detail__price {
+    padding: 10px;
+    padding-bottom: 20px; }
+  .cart-content--text .book-detail__number {
+    max-width: 150px;
+    position: absolute;
+    top: 80px;
+    right: 60px; }
+    .cart-content--text .book-detail__number i.fa-window-close {
+      margin-left: 15px;
+      color: #e55530;
+      cursor: pointer; }
+  .cart-content--right {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 15px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #eeeeee; }
+    .cart-content--right .float-right {
+      color: red; }
+    .cart-content--right p {
+      margin-bottom: 15px; }
+    .cart-content--right .btn-buybook {
+      width: 80%;
+      background-image: linear-gradient(to bottom, #fef7c9, #ffe554);
+      outline: none;
+      border-radius: 10px;
+      border: 1px solid #f6ca32;
+      padding: 10px; }
 
 @media all and (min-width: 992px) and (max-width: 1200px) {
   .main-slide__next {
