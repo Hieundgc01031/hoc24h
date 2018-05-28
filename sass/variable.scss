@@ -12,28 +12,40 @@ $color-blue: #23a1f1;
 .color-blue{
   color: $color-blue;
 }
-.c-pointer{
-  cursor: pointer;
-}
 .color-white{
   color: #fff;
 }
 .bgc-white{
   color: #fff;
 }
+.width100{
+  width: 100%;
+}
+.c-pointer{
+  cursor: pointer;
+}
+.text-under{
+  text-decoration: underline;
+}
+
+h6{
+  font-size: 24px;
+  text-transform: uppercase;
+}
 
 .fontw-bold{
   font-weight: 700;
 }
 
-.pdlr-15{
-  padding: 0 15px;
-}
 .float-left{
   float: left;
 }
 .float-right{
   float: right;
+}
+
+.pdlr-15{
+  padding: 0 15px;
 }
 .mrt-0{
   margin-top: 0;

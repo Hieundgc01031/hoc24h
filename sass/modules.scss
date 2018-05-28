@@ -1,4 +1,5 @@
 @import "mixin";
+@import "variable";
 .first-header{
   background: linear-gradient(to right, #2491d6 ,#87cbf5, #2491d6);
   padding: 10px 0;
@@ -54,12 +55,12 @@
   }
   &__next{
     right: 0;
-    top: 39%;
+    top: 38%;
     position: absolute;
   }
   &__previous{
     right: 0;
-    top:  51%;
+    top:  52%;
     position: absolute;
     z-index: 10;
   }
@@ -194,6 +195,7 @@
       }
     }
   }
+
   .search-bar{
     &__width{
       padding: 15px;
@@ -254,9 +256,6 @@
       right: 0;
     }
   }
-
-
-
 
   //modal dang nhap dang ky
   .modal-connect{
@@ -328,7 +327,6 @@
     }
   }
 }
-
 
 .course-exam{
   position: relative;
@@ -421,6 +419,9 @@
 
 //BOOK  -  HOME
 .hbook{
+  &>.container{
+    position: relative;
+  }
   &--read{
     font-size: 24px;
     color: #fff;
@@ -572,6 +573,270 @@
       }
       td{
         padding: 5px 10px;
+      }
+    }
+  }
+}
+
+//HỌC online và nạp tiền
+.money-learn{
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  .item{
+    text-align: center;
+    border-radius: 50%;
+    width: 107px;
+    height: 107px;
+    background:  linear-gradient(to bottom, #97dc31, #53ab23);
+    box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.1);
+    padding: 33px 10px;
+    margin-top: 20px;
+    a{
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}
+
+
+
+//BOOK DETAIL
+.book-detail{
+  position: relative;
+  &--imgab{
+    z-index: 0;
+    position: absolute;
+    &.img1{
+      left: -200px;
+      top: 195px;
+    }
+    &.img2{
+      right: -200px;
+      top: 120px;
+    }
+    &.img3{
+      left: -200px;
+      top: 10px;
+    }
+    &.img4{
+      right: -200px;
+      top: 10px;
+    }
+
+  }
+
+  &--tittle{
+    margin: 25px 0;
+  }
+  &--content{
+    z-index: 3;
+    width: 100%;
+    height: 515px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #eeeeee;
+    margin-bottom: 35px;
+    padding: 30px;
+    background-color: #fff;
+    position: relative;
+  }
+  &__img{
+    width: 45%;
+    float: left;
+  }
+  &__left{
+    float: left;
+    width: 80px;
+  }
+  &__border{
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__right{
+    float: left;
+    width: 80%;
+    text-align: center;
+  }
+  &__text{
+    height: 100%;
+    border-left: 2px solid #f9f9f9;
+    float: left;
+    width: 55%;
+  }
+  &__name{
+    border-bottom: 2px solid #f9f9f9;
+    padding:0 25px 15px 25px;
+    .name-book{
+      font-weight: 700;
+      font-size: 18px;
+    }
+    a{
+      margin-left: 7px;
+      color: $color-blue;
+      text-decoration: underline;
+    }
+  }
+  &__price{
+    border-bottom: 2px solid #f9f9f9;
+    padding: 25px;
+    .fontw-bold{
+      font-size: 18px;
+      color: #e55630;
+    }
+    p{
+      color: #c0c0c0;
+    }
+  }
+  &__number{
+    .border-buy{
+      display: inline-block;
+      border: 1px solid #ccc;
+      width: 115px;
+      height: 35px;
+      .btn{
+        padding: 7px 13px;
+        background-color: transparent;
+        outline: none;
+        border: 0;
+      }
+      span{
+        padding: 0 10px;
+      }
+    }
+    .btn-buybook{
+      background-image: linear-gradient(to bottom, #fef7c9, #ffe554);
+      outline: none;
+      border-radius: 10px;
+      border: 1px solid #f6ca32;
+      padding:10px 80px;
+      margin-left: 50px;
+    }
+  }
+  &__textcont{
+    padding: 25px 10px 25px 25px;
+  }
+  &--social{
+    position: absolute;
+    top: 0;
+    left: -63px;
+    width: 60px;
+    height: auto;
+    .like{
+      text-align: center;
+      border: 1px solid #cee3f0;
+      border-radius: 3px;
+      font-size: 13px;
+      padding: 3px 0;
+      margin-bottom: 10px;
+      cursor: pointer;
+      &.twitter-like{
+        background-color: #d9e8f0;
+        color: #2298ca;
+      }
+      &.facebook-like{
+        color: #3b5998;
+        background-color: #eceef5;
+      }
+      &.google-like{
+        background: #e8e8e8;
+        color: #166aee;
+        font-weight: 700;
+      }
+    }
+    .number {
+      font-size: 13px;
+      border-radius: 5px;
+      padding: 5px 0;
+      text-align: center;
+      margin-bottom: 5px;
+      position: relative;
+      background: #fff;
+      border: 1px solid #cee3f0;
+    }
+    .number:after, .number:before {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .number:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-top-color: #fff;
+      border-width: 5px;
+      margin-left: -5px;
+    }
+    .number:before {
+      border-color: rgba(206, 227, 240, 0);
+      border-top-color: #cee3f0;
+      border-width: 6px;
+      margin-left: -6px;
+    }
+  }
+}
+
+.hbook-list{
+  .img1{
+
+  }
+  .img2{
+
+  }
+  .img3{
+    top: 540px;
+  }
+  .img4{
+    top: 540px;
+  }
+  &--tittle{
+    width: auto;
+    float: left;
+  }
+  &--filter{
+    margin: 25px 0;
+    float: right;
+    text-align: right;
+    span{
+      padding: 0 5px 0 10px;
+      cursor: pointer;
+      &.active{
+        color: $color-blue;
+        font-weight: 700;
+      }
+    }
+    //position: absolute;
+    //top: 0;
+    //right: 0;
+    p{
+      width: auto;
+      display: inline-block;
+    }
+  }
+}
+.book-list{
+  margin-bottom: 25px;
+  &--pagination{
+    width: 100%;
+    text-align: center;
+    ul{
+      li{
+        a{
+          margin: 0 3px;
+        }
       }
     }
   }

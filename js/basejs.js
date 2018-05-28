@@ -10,9 +10,5 @@ $(document).ready(function () {
         $('.modal-connect--signin').show();
         $('.modal-connect--signup').hide();
     });
-    // $(document).click(function () {
-    //     $('.modal-connect--signin').hide();
-    //     $('.modal-connect--signup').hide();
-    //
-    // });
+
 });

@@ -1,0 +1,17 @@
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .main-slide__next {
+    top: 37%; }
+  .main-slide__previous {
+    top: 54%; } }
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .main-slide__controls {
+    width: 45px;
+    height: 45px; }
+    .main-slide__controls i {
+      font-size: 17px; }
+  .main-slide__next {
+    top: 36%; }
+  .main-slide__previous {
+    top: 56%; } }
+
+/*# sourceMappingURL=responsive.css.map */

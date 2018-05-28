@@ -62,26 +62,36 @@ ul {
 .color-blue {
   color: #23a1f1; }
 
-.c-pointer {
-  cursor: pointer; }
-
 .color-white {
   color: #fff; }
 
 .bgc-white {
   color: #fff; }
 
+.width100 {
+  width: 100%; }
+
+.c-pointer {
+  cursor: pointer; }
+
+.text-under {
+  text-decoration: underline; }
+
+h6 {
+  font-size: 24px;
+  text-transform: uppercase; }
+
 .fontw-bold {
   font-weight: 700; }
-
-.pdlr-15 {
-  padding: 0 15px; }
 
 .float-left {
   float: left; }
 
 .float-right {
   float: right; }
+
+.pdlr-15 {
+  padding: 0 15px; }
 
 .mrt-0 {
   margin-top: 0; }
@@ -162,6 +172,88 @@ header {
   .footer--end {
     margin-top: 40px; }
 
+.bgc-orange {
+  background-color: #f36e4b; }
+
+.color-orange {
+  color: #f36e4b; }
+
+.bgc-blue {
+  background-color: #23a1f1; }
+
+.color-blue {
+  color: #23a1f1; }
+
+.color-white {
+  color: #fff; }
+
+.bgc-white {
+  color: #fff; }
+
+.width100 {
+  width: 100%; }
+
+.c-pointer {
+  cursor: pointer; }
+
+.text-under {
+  text-decoration: underline; }
+
+h6 {
+  font-size: 24px;
+  text-transform: uppercase; }
+
+.fontw-bold {
+  font-weight: 700; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.pdlr-15 {
+  padding: 0 15px; }
+
+.mrt-0 {
+  margin-top: 0; }
+
+.mrl-0 {
+  margin-left: 0; }
+
+.mrr-0 {
+  margin-right: 0; }
+
+.mrb-0 {
+  margin-bottom: 0; }
+
+.mrt-25 {
+  margin-top: 25px; }
+
+.mrt-30 {
+  margin-top: 30px; }
+
+.mrt-35 {
+  margin-top: 35px; }
+
+.mrt-50 {
+  margin-top: 50px; }
+
+.mrt-60 {
+  margin-top: 60px; }
+
+.mrt-70 {
+  margin-top: 70px; }
+
+.mrt-80 {
+  margin-top: 80px; }
+
+.mrt-85 {
+  margin-top: 85px; }
+
+.pdb-85px {
+  padding-bottom: 85px; }
+
 .first-header {
   background: linear-gradient(to right, #2491d6, #87cbf5, #2491d6);
   padding: 10px 0; }
@@ -204,11 +296,11 @@ header {
     font-size: 18px; }
 .main-slide__next {
   right: 0;
-  top: 39%;
+  top: 38%;
   position: absolute; }
 .main-slide__previous {
   right: 0;
-  top: 51%;
+  top: 52%;
   position: absolute;
   z-index: 10; }
 .main-slide .slick-dots {
@@ -482,6 +574,8 @@ header {
 .hthird-row .course-exam--img__right {
   bottom: 40px; }
 
+.hbook > .container {
+  position: relative; }
 .hbook--read {
   font-size: 24px;
   color: #fff;
@@ -598,5 +692,215 @@ header {
         border-top-right-radius: 10px; }
     .new-test table tr td {
       padding: 5px 10px; }
+
+.money-learn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px; }
+  .money-learn .item {
+    text-align: center;
+    border-radius: 50%;
+    width: 107px;
+    height: 107px;
+    background: linear-gradient(to bottom, #97dc31, #53ab23);
+    box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.1);
+    padding: 33px 10px;
+    margin-top: 20px; }
+    .money-learn .item a {
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.book-detail {
+  position: relative; }
+  .book-detail--imgab {
+    z-index: 0;
+    position: absolute; }
+    .book-detail--imgab.img1 {
+      left: -200px;
+      top: 195px; }
+    .book-detail--imgab.img2 {
+      right: -200px;
+      top: 120px; }
+    .book-detail--imgab.img3 {
+      left: -200px;
+      top: 10px; }
+    .book-detail--imgab.img4 {
+      right: -200px;
+      top: 10px; }
+  .book-detail--tittle {
+    margin: 25px 0; }
+  .book-detail--content {
+    z-index: 3;
+    width: 100%;
+    height: 515px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #eeeeee;
+    margin-bottom: 35px;
+    padding: 30px;
+    background-color: #fff;
+    position: relative; }
+  .book-detail__img {
+    width: 45%;
+    float: left; }
+  .book-detail__left {
+    float: left;
+    width: 80px; }
+  .book-detail__border {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 80px;
+    height: 80px;
+    padding: 2px; }
+    .book-detail__border img {
+      width: 100%;
+      height: 100%; }
+  .book-detail__right {
+    float: left;
+    width: 80%;
+    text-align: center; }
+  .book-detail__text {
+    height: 100%;
+    border-left: 2px solid #f9f9f9;
+    float: left;
+    width: 55%; }
+  .book-detail__name {
+    border-bottom: 2px solid #f9f9f9;
+    padding: 0 25px 15px 25px; }
+    .book-detail__name .name-book {
+      font-weight: 700;
+      font-size: 18px; }
+    .book-detail__name a {
+      margin-left: 7px;
+      color: #23a1f1;
+      text-decoration: underline; }
+  .book-detail__price {
+    border-bottom: 2px solid #f9f9f9;
+    padding: 25px; }
+    .book-detail__price .fontw-bold {
+      font-size: 18px;
+      color: #e55630; }
+    .book-detail__price p {
+      color: #c0c0c0; }
+  .book-detail__number .border-buy {
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 115px;
+    height: 35px; }
+    .book-detail__number .border-buy .btn {
+      padding: 7px 13px;
+      background-color: transparent;
+      outline: none;
+      border: 0; }
+    .book-detail__number .border-buy span {
+      padding: 0 10px; }
+  .book-detail__number .btn-buybook {
+    background-image: linear-gradient(to bottom, #fef7c9, #ffe554);
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #f6ca32;
+    padding: 10px 80px;
+    margin-left: 50px; }
+  .book-detail__textcont {
+    padding: 25px 10px 25px 25px; }
+  .book-detail--social {
+    position: absolute;
+    top: 0;
+    left: -63px;
+    width: 60px;
+    height: auto; }
+    .book-detail--social .like {
+      text-align: center;
+      border: 1px solid #cee3f0;
+      border-radius: 3px;
+      font-size: 13px;
+      padding: 3px 0;
+      margin-bottom: 10px;
+      cursor: pointer; }
+      .book-detail--social .like.twitter-like {
+        background-color: #d9e8f0;
+        color: #2298ca; }
+      .book-detail--social .like.facebook-like {
+        color: #3b5998;
+        background-color: #eceef5; }
+      .book-detail--social .like.google-like {
+        background: #e8e8e8;
+        color: #166aee;
+        font-weight: 700; }
+    .book-detail--social .number {
+      font-size: 13px;
+      border-radius: 5px;
+      padding: 5px 0;
+      text-align: center;
+      margin-bottom: 5px;
+      position: relative;
+      background: #fff;
+      border: 1px solid #cee3f0; }
+    .book-detail--social .number:after, .book-detail--social .number:before {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    .book-detail--social .number:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-top-color: #fff;
+      border-width: 5px;
+      margin-left: -5px; }
+    .book-detail--social .number:before {
+      border-color: rgba(206, 227, 240, 0);
+      border-top-color: #cee3f0;
+      border-width: 6px;
+      margin-left: -6px; }
+
+.hbook-list .img3 {
+  top: 540px; }
+.hbook-list .img4 {
+  top: 540px; }
+.hbook-list--tittle {
+  width: auto;
+  float: left; }
+.hbook-list--filter {
+  margin: 25px 0;
+  float: right;
+  text-align: right; }
+  .hbook-list--filter span {
+    padding: 0 5px 0 10px;
+    cursor: pointer; }
+    .hbook-list--filter span.active {
+      color: #23a1f1;
+      font-weight: 700; }
+  .hbook-list--filter p {
+    width: auto;
+    display: inline-block; }
+
+.book-list {
+  margin-bottom: 25px; }
+  .book-list--pagination {
+    width: 100%;
+    text-align: center; }
+    .book-list--pagination ul li a {
+      margin: 0 3px; }
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .main-slide__next {
+    top: 37%; }
+  .main-slide__previous {
+    top: 54%; } }
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .main-slide__controls {
+    width: 45px;
+    height: 45px; }
+    .main-slide__controls i {
+      font-size: 17px; }
+  .main-slide__next {
+    top: 36%; }
+  .main-slide__previous {
+    top: 56%; } }
 
 /*# sourceMappingURL=style.css.map */

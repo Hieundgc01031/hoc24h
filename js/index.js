@@ -5,7 +5,32 @@ $(document).ready(function () {
         prevArrow: '<button class="main-slide__previous main-slide__controls"><i class="fas fa-chevron-left"></i></button>',
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: false
+        infinite: false,
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
     });
 
     var widthbmenu = $('.bmenu').width();
@@ -34,7 +59,38 @@ $(document).ready(function () {
         prevArrow: '<button class="button__controls button__previous "><i class="fas fa-chevron-left"></i></button>',
         slidesToShow: 4,
         slidesToScroll: 1,
-        infinite: false
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                }
+            }
+        ]
     });
 
 
@@ -44,7 +100,38 @@ $(document).ready(function () {
         prevArrow: '<button class="button__previous button__controls"><i class="fas fa-chevron-left"></i></button>',
         slidesToShow: 4,
         slidesToScroll: 1,
-        infinite: false
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                }
+            }
+        ]
     });
 
 
@@ -54,7 +141,38 @@ $(document).ready(function () {
         prevArrow: '<button class="button__previous button__controls"><i class="fas fa-chevron-left"></i></button>',
         slidesToShow: 4,
         slidesToScroll: 1,
-        infinite: false
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                }
+            }
+        ]
     });
 
 
