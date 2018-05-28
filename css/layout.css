@@ -10,6 +10,9 @@ header {
 .wrap-content {
   background-color: #f9f9f9; }
 
+#modal-signin {
+  overflow: hidden; }
+
 .footer {
   background-color: #f36e4b;
   height: auto;
