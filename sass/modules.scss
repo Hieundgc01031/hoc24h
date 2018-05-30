@@ -791,10 +791,10 @@
 
   }
   .img3{
-    top: 540px;
+    top: 600px;
   }
   .img4{
-    top: 540px;
+    top: 600px;
   }
   &--tittle{
     width: auto;
@@ -1006,4 +1006,37 @@
       border: 0;
     }
   }
+}
+
+
+//COUSE LIST
+.course-list{
+  &--select{
+    padding: 10px 0 10px 10px;
+    border-radius: 8px;
+    width: 550px;
+    height: 40px;
+    border: 1px solid #ccc;
+    .item{
+      width: 32%;
+      padding: 0 5px;
+      background-color: transparent;
+      border: 0;
+      border-left: 1px solid #ccc;
+      outline: none;
+      &:first-child{
+        border-left: 0;
+      }
+    }
+  }
+  &__class{
+
+  }
+  &--filter{
+    padding-top: 35px;
+  }
+  &--item{
+    margin-bottom: 30px;
+  }
+
 }

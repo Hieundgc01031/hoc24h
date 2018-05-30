@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>COURSE LIST</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/basejs.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="container-fluid">
+    <div class="row first-header">
+        <div class="container">
+            <ul class="float-left hcontact">
+                <li class="hcontact--phone c-pointer">
+                    <i class="fas fa-phone-square"></i>
+                    <span>1900 7072</span>
+                </li>
+                <li class="line-v">
+
+                </li>
+                <li class="hcontact--mail c-pointer">
+                    <i class="fas fa-phone-square"></i>
+                    <span>hoc24hmoingay@gmail.com</span>
+                </li>
+            </ul>
+            <ul class="float-right usercon">
+                <li class="usercon--signup c-pointer">
+                    <span>Đăng ký</span>
+                </li>
+                <li class="line-v">
+
+                </li>
+                <li class="usercon--signin c-pointer">
+                    <span >Đăng nhập</span>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!--    MENU HEADER   -->
+    <div class="row secon-header">
+        <div class="container ">
+
+            <ul class="hmenu">
+                <li>
+                    <a href="index.html">
+                        trang chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        giới thiệu
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        khóa học
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        tự luyện
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        tài liệu
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        blog
+                    </a>
+                </li>
+            </ul>       <!--    MENU HEADER   -->
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class=" modal-connect">
+        <div class="modal-connect--signup modal fade" role="dialog" id="modal-signup">
+            <div class="modal-diaglog">
+                <div class="modal-content">
+                    <div class="text-center fontw-bold">Đăng ký</div>
+                    <div class="col-xs-6 modal-connect__first" >
+                        <form  class="col-xs-12">
+                            <input type="text" class="form-control" placeholder="Username">
+                            <input type="password" class="form-control" placeholder="Mật khẩu">
+                            <input type="password" class="form-control" placeholder="Nhập lại mật khẩu">
+                            <button class="modal-connect__buttonf fontw-bold">
+                                Đăng ký
+                            </button>
+                        </form>
+
+                    </div>
+                    <div class="col-xs-6 modal-connect__secon">
+                        <p>Nếu bạn đã có tài khoản hãy <span class="modal-connect__span  usercon--signin c-pointer">đăng nhập</span>
+                        </p>
+                        <p>Hoặc dùng:</p>
+                        <p>
+                            <a class="btn btn-face fontw-bold"><i class="fab fa-facebook-f"></i>Sign-in with Facebook</a>
+                        </p>
+
+                        <p>
+                            <a class="btn btn-twitch fontw-bold"><i class="fab fa-twitter"></i>Sign-in with Twiter</a>
+                        </p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-connect--signin modal fade" role="dialog" id="modal-signin">
+            <div class="modal-diaglog">
+                <div class="modal-content">
+                    <p class="text-center fontw-bold">Đăng nhập</p>
+                    <div class="col-xs-6 modal-connect__first" >
+                        <form  class="col-xs-12">
+                            <input type="text" class="form-control" placeholder="Username">
+                            <input type="password" class="form-control" placeholder="Mật khẩu">
+                            <p><a href="#" class="modal-connect__link">Quên mật khẩu</a>
+                                <input type="checkbox" value="">Lưu mật khẩu
+                            </p>
+                            <button class="modal-connect__buttonf fontw-bold">
+                                Đăng nhập
+                            </button>
+                        </form>
+
+                    </div>
+                    <div class="col-xs-6 modal-connect__secon">
+                        <p>Nếu bạn chưa có tài khoản hãy <span class="modal-connect__span usercon--signup c-pointer">đăng ký</span>
+                        </p>
+                        <p>Hoặc dùng:</p>
+
+                        <p>
+                            <a class="btn btn-face fontw-bold"><i class="fab fa-facebook-f"></i>Sign-in with Facebook</a>
+                        </p>
+
+                        <p>
+                            <a class="btn btn-twitch fontw-bold"><i class="fab fa-twitter"></i>Sign-in with Twiter</a>
+                        </p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="first-slide">
+    <div class="main-slide" style="background: url('img/bgc/bgrhome.png') no-repeat;background-size: cover;">
+        <img class="width100" src="img/slide/slide1.png" alt="">
+
+    </div>
+</section>
+
+<section class="wrap-content">
+    <div class="container-fluid pdb-85px">
+        <div class="row hbook hbook-list" >
+            <div class="container course-list">
+                <div class="book-detail--tittle hbook-list--tittle">
+                    <p>
+                        <a href="index.html">Trang chủ</a>
+                        <span>/</span>
+                        <a href="#">Lớp 3</a>
+                        <span>/</span>
+                        <span class="color-blue">Sinh học</span>
+                    </p>
+                    <div class="course-list--select">
+                        <select class="course-list__class item">
+                            <option value="" selected="true" disabled>Chọn lớp</option>
+                            <option value="">Lớp 1</option>
+                            <option value="">Lớp 2</option>
+                            <option value="">Lớp 3</option>
+                            <option value="">Lớp 4</option>
+                        </select>
+                        <select class="course-list__subject item" >
+                            <option value="" selected="true" disabled>Chọn môn</option>
+                            <option value="">Toán học</option>
+                            <option value="">Vật lý</option>
+                            <option value="">Hóa học</option>
+                        </select>
+                        <select class="course-list__subject item" >
+                            <option value="" selected="true" disabled>Chọn giảng viên</option>
+                            <option value="">Toán học</option>
+                            <option value="">Vật lý</option>
+                            <option value="">Hóa học</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="hbook-list--filter course-list--filter ">
+                    <span class="active">Nổi bật</span>
+                    <span class="">Mới nhất</span>
+                    <span class="">Giá tăng dần</span>
+                    <span class="">Giá giảm dần</span>
+                    <span class="">A - Z</span>
+                    <span class="">Z - A</span>
+                </div>
+                <div class="clearfix"></div>
+                <img class="book-detail--imgab img1 " src="img/icon/bgc1.png" />
+                <img class="book-detail--imgab img2 " src="img/icon/bgc2.png" />
+                <img class="book-detail--imgab img3 " src="img/icon/bgc3.png"/>
+                <img class="book-detail--imgab img4 " src="img/icon/bgc4.png"/>
+
+                <div class="row ">
+                    <div class="col-md-3 course-list--item">
+                        <div class="course-exam--item">
+                            <a href="#">
+                                <img src="img/slide/s22.png"/>
+                            </a>
+                            <div class="pdlr-15">
+                                <a href="#" class="course-exam__name">
+                                    SUPER-1: LUYỆN THI THPT QG
+                                </a>
+                                <a href="#" class="course-exam__teacher">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="course-exam__content">
+                                    Khóa học Digital Marketing tại Vinalink là nơi duy nhất
+                                    đào tạo lập kế hoạch Marketing Online theo quy trình Quốc tế
+                                </p>
+                                <p class="course-exam__fee">
+                                    Học phí: <span>800.000.000đ</span>
+                                </p>
+                                <div class="row">
+                                    <div class="course-exam__line"></div>
+                                </div>
+                                <p class="course-exam__green">
+                                    <i class="fas fa-flag"></i> <span>Lớp 3</span>
+                                    <i class="fas fa-briefcase"></i> <span>Toán học</span>
+                                </p>
+                            </div>
+                        </div>      <!--course-exam--item-->
+                    </div>
+
+                    <div class="col-md-3 course-list--item">
+                        <div class="course-exam--item ">
+                            <a href="#">
+                                <img src="img/slide/s22.png"/>
+                            </a>
+                            <div class="pdlr-15">
+                                <a href="#" class="course-exam__name">
+                                    SUPER-1: LUYỆN THI THPT QG
+                                </a>
+                                <a href="#" class="course-exam__teacher">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="course-exam__content">
+                                    Khóa học Digital Marketing tại Vinalink là nơi duy nhất
+                                    đào tạo lập kế hoạch Marketing Online theo quy trình Quốc tế
+                                </p>
+                                <p class="course-exam__fee">
+                                    Học phí: <span>800.000.000đ</span>
+                                </p>
+                                <div class="row">
+                                    <div class="course-exam__line"></div>
+                                </div>
+                                <p class="course-exam__green">
+                                    <i class="fas fa-flag"></i> <span>Lớp 3</span>
+                                    <i class="fas fa-briefcase"></i> <span>Toán học</span>
+                                </p>
+                            </div>
+                        </div>      <!--course-exam--item-->
+                    </div>
+
+                    <div class="col-md-3 course-list--item">
+                        <div class="course-exam--item ">
+                            <a href="#">
+                                <img src="img/slide/s22.png"/>
+                            </a>
+                            <div class="pdlr-15">
+                                <a href="#" class="course-exam__name">
+                                    SUPER-1: LUYỆN THI THPT QG
+                                </a>
+                                <a href="#" class="course-exam__teacher">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="course-exam__content">
+                                    Khóa học Digital Marketing tại Vinalink là nơi duy nhất
+                                    đào tạo lập kế hoạch Marketing Online theo quy trình Quốc tế
+                                </p>
+                                <p class="course-exam__fee">
+                                    Học phí: <span>800.000.000đ</span>
+                                </p>
+                                <div class="row">
+                                    <div class="course-exam__line"></div>
+                                </div>
+                                <p class="course-exam__green">
+                                    <i class="fas fa-flag"></i> <span>Lớp 3</span>
+                                    <i class="fas fa-briefcase"></i> <span>Toán học</span>
+                                </p>
+                            </div>
+                        </div>      <!--course-exam--item-->
+                    </div>
+
+                    <div class="col-md-3 course-list--item">
+                        <div class="course-exam--item ">
+                            <a href="#">
+                                <img src="img/slide/s22.png"/>
+                            </a>
+                            <div class="pdlr-15">
+                                <a href="#" class="course-exam__name">
+                                    SUPER-1: LUYỆN THI THPT QG
+                                </a>
+                                <a href="#" class="course-exam__teacher">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="course-exam__content">
+                                    Khóa học Digital Marketing tại Vinalink là nơi duy nhất
+                                    đào tạo lập kế hoạch Marketing Online theo quy trình Quốc tế
+                                </p>
+                                <p class="course-exam__fee">
+                                    Học phí: <span>800.000.000đ</span>
+                                </p>
+                                <div class="row">
+                                    <div class="course-exam__line"></div>
+                                </div>
+                                <p class="course-exam__green">
+                                    <i class="fas fa-flag"></i> <span>Lớp 3</span>
+                                    <i class="fas fa-briefcase"></i> <span>Toán học</span>
+                                </p>
+                            </div>
+                        </div>      <!--course-exam--item-->
+                    </div>
+
+                    <div class="col-md-3 course-list--item">
+                        <div class="course-exam--item ">
+                            <a href="#">
+                                <img src="img/slide/s22.png"/>
+                            </a>
+                            <div class="pdlr-15">
+                                <a href="#" class="course-exam__name">
+                                    SUPER-1: LUYỆN THI THPT QG
+                                </a>
+                                <a href="#" class="course-exam__teacher">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="course-exam__content">
+                                    Khóa học Digital Marketing tại Vinalink là nơi duy nhất
+                                    đào tạo lập kế hoạch Marketing Online theo quy trình Quốc tế
+                                </p>
+                                <p class="course-exam__fee">
+                                    Học phí: <span>800.000.000đ</span>
+                                </p>
+                                <div class="row">
+                                    <div class="course-exam__line"></div>
+                                </div>
+                                <p class="course-exam__green">
+                                    <i class="fas fa-flag"></i> <span>Lớp 3</span>
+                                    <i class="fas fa-briefcase"></i> <span>Toán học</span>
+                                </p>
+                            </div>
+                        </div>      <!--course-exam--item-->
+                    </div>
+
+                    <div class="col-md-3 course-list--item">
+                        <div class="course-exam--item ">
+                            <a href="#">
+                                <img src="img/slide/s22.png"/>
+                            </a>
+                            <div class="pdlr-15">
+                                <a href="#" class="course-exam__name">
+                                    SUPER-1: LUYỆN THI THPT QG
+                                </a>
+                                <a href="#" class="course-exam__teacher">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="course-exam__content">
+                                    Khóa học Digital Marketing tại Vinalink là nơi duy nhất
+                                    đào tạo lập kế hoạch Marketing Online theo quy trình Quốc tế
+                                </p>
+                                <p class="course-exam__fee">
+                                    Học phí: <span>800.000.000đ</span>
+                                </p>
+                                <div class="row">
+                                    <div class="course-exam__line"></div>
+                                </div>
+                                <p class="course-exam__green">
+                                    <i class="fas fa-flag"></i> <span>Lớp 3</span>
+                                    <i class="fas fa-briefcase"></i> <span>Toán học</span>
+                                </p>
+                            </div>
+                        </div>      <!--course-exam--item-->
+                    </div>
+
+                    <div class="col-md-3 course-list--item">
+                        <div class="course-exam--item ">
+                            <a href="#">
+                                <img src="img/slide/s22.png"/>
+                            </a>
+                            <div class="pdlr-15">
+                                <a href="#" class="course-exam__name">
+                                    SUPER-1: LUYỆN THI THPT QG
+                                </a>
+                                <a href="#" class="course-exam__teacher">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="course-exam__content">
+                                    Khóa học Digital Marketing tại Vinalink là nơi duy nhất
+                                    đào tạo lập kế hoạch Marketing Online theo quy trình Quốc tế
+                                </p>
+                                <p class="course-exam__fee">
+                                    Học phí: <span>800.000.000đ</span>
+                                </p>
+                                <div class="row">
+                                    <div class="course-exam__line"></div>
+                                </div>
+                                <p class="course-exam__green">
+                                    <i class="fas fa-flag"></i> <span>Lớp 3</span>
+                                    <i class="fas fa-briefcase"></i> <span>Toán học</span>
+                                </p>
+                            </div>
+                        </div>      <!--course-exam--item-->
+                    </div>
+
+                    <div class="col-md-3 course-list--item">
+                        <div class="course-exam--item ">
+                            <a href="#">
+                                <img src="img/slide/s22.png"/>
+                            </a>
+                            <div class="pdlr-15">
+                                <a href="#" class="course-exam__name">
+                                    SUPER-1: LUYỆN THI THPT QG
+                                </a>
+                                <a href="#" class="course-exam__teacher">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="course-exam__content">
+                                    Khóa học Digital Marketing tại Vinalink là nơi duy nhất
+                                    đào tạo lập kế hoạch Marketing Online theo quy trình Quốc tế
+                                </p>
+                                <p class="course-exam__fee">
+                                    Học phí: <span>800.000.000đ</span>
+                                </p>
+                                <div class="row">
+                                    <div class="course-exam__line"></div>
+                                </div>
+                                <p class="course-exam__green">
+                                    <i class="fas fa-flag"></i> <span>Lớp 3</span>
+                                    <i class="fas fa-briefcase"></i> <span>Toán học</span>
+                                </p>
+                            </div>
+                        </div>      <!--course-exam--item-->
+                    </div>
+
+                    <div class="col-md-3 course-list--item">
+                        <div class="course-exam--item ">
+                            <a href="#">
+                                <img src="img/slide/s22.png"/>
+                            </a>
+                            <div class="pdlr-15">
+                                <a href="#" class="course-exam__name">
+                                    SUPER-1: LUYỆN THI THPT QG
+                                </a>
+                                <a href="#" class="course-exam__teacher">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="course-exam__content">
+                                    Khóa học Digital Marketing tại Vinalink là nơi duy nhất
+                                    đào tạo lập kế hoạch Marketing Online theo quy trình Quốc tế
+                                </p>
+                                <p class="course-exam__fee">
+                                    Học phí: <span>800.000.000đ</span>
+                                </p>
+                                <div class="row">
+                                    <div class="course-exam__line"></div>
+                                </div>
+                                <p class="course-exam__green">
+                                    <i class="fas fa-flag"></i> <span>Lớp 3</span>
+                                    <i class="fas fa-briefcase"></i> <span>Toán học</span>
+                                </p>
+                            </div>
+                        </div>      <!--course-exam--item-->
+                    </div>
+
+                    <div class="col-md-3 course-list--item">
+                        <div class="course-exam--item ">
+                            <a href="#">
+                                <img src="img/slide/s22.png"/>
+                            </a>
+                            <div class="pdlr-15">
+                                <a href="#" class="course-exam__name">
+                                    SUPER-1: LUYỆN THI THPT QG
+                                </a>
+                                <a href="#" class="course-exam__teacher">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="course-exam__content">
+                                    Khóa học Digital Marketing tại Vinalink là nơi duy nhất
+                                    đào tạo lập kế hoạch Marketing Online theo quy trình Quốc tế
+                                </p>
+                                <p class="course-exam__fee">
+                                    Học phí: <span>800.000.000đ</span>
+                                </p>
+                                <div class="row">
+                                    <div class="course-exam__line"></div>
+                                </div>
+                                <p class="course-exam__green">
+                                    <i class="fas fa-flag"></i> <span>Lớp 3</span>
+                                    <i class="fas fa-briefcase"></i> <span>Toán học</span>
+                                </p>
+                            </div>
+                        </div>      <!--course-exam--item-->
+                    </div>
+
+                    <div class="col-md-3 course-list--item">
+                        <div class="course-exam--item ">
+                            <a href="#">
+                                <img src="img/slide/s22.png"/>
+                            </a>
+                            <div class="pdlr-15">
+                                <a href="#" class="course-exam__name">
+                                    SUPER-1: LUYỆN THI THPT QG
+                                </a>
+                                <a href="#" class="course-exam__teacher">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="course-exam__content">
+                                    Khóa học Digital Marketing tại Vinalink là nơi duy nhất
+                                    đào tạo lập kế hoạch Marketing Online theo quy trình Quốc tế
+                                </p>
+                                <p class="course-exam__fee">
+                                    Học phí: <span>800.000.000đ</span>
+                                </p>
+                                <div class="row">
+                                    <div class="course-exam__line"></div>
+                                </div>
+                                <p class="course-exam__green">
+                                    <i class="fas fa-flag"></i> <span>Lớp 3</span>
+                                    <i class="fas fa-briefcase"></i> <span>Toán học</span>
+                                </p>
+                            </div>
+                        </div>      <!--course-exam--item-->
+                    </div>
+                </div>      <!-- row -->
+
+                <div class="book-list--pagination">
+                    <ul class="pagination">
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                </div>
+
+            </div>      <!-- container  -->
+
+        </div>  <!--  hbook  -->
+    </div>
+
+</section>
+
+<footer class="container-fluid footer">
+    <div class="row">
+        <div class="container footer--container">
+            <img class="footer--img footer--fo1" src="img/icon/foot1.png" height="135" width="167"/>
+            <img class="footer--img footer--fo2" src="img/icon/foot2.png" height="136" width="167"/>
+            <div class="foooter-content row">
+                <div class="footer--first col-md-3 col-sm-6">
+                    <p>Công Ty TNHH ....</p>
+                    <p>Nhà máy 1 : Lô 38D - Nhà máy 2 : Lô 49D</p>
+                    <p>Khu Công Nghiệp Quang Minh</p>
+                    <p>Thị trấn Quang Minh , Huyện Mê Linh</p>
+                    <p>Hà Nội, Việt Nam</p>
+                </div>
+                <div class="footer--secon col-md-2 col-sm-6">
+                    <p><a href="#">DANH MỤC</a></p>
+                    <p><a href="#">Trang chủ</a></p>
+                    <p><a href="#">Giới thiệu</a></p>
+                    <p><a href="#">Dân sự</a></p>
+                    <p><a href="#">Hình sự</a></p>
+                    <p><a href="#">Đất đai</a></p>
+                    <p><a href="#">Doanh nghiệp</a></p>
+                </div>
+                <div class="footer--third col-md-2">
+                    <p>THEO DÕI CHÚNG TÔI</p>
+                    <p class="footer--i">
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">
+                            <img src="img/icon/protected.png" height="20" width="97"/>
+                        </a>
+                    </p>
+                </div>
+                <div class="footer--four col-md-4 col-lg-4 col-lg-offset-1 col-md-offset-0">
+                    <img src="img/icon/map.png" />
+                </div>
+                <div class="clearfix"></div>
+                <p class="text-center footer--end">Đăng ký hoạt động số 01020716/ĐKHD-STP, do Sở Tư pháp thành phố Hà Nội cấp ngày 13/09/2011</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="money-learn">
+    <div class="first-item item">
+        <a href="#"><i>Hướng dẫn học online</i></a>
+    </div>
+    <div class="secon-item item">
+        <a href="#"><i>Hướng dẫn nạp tiền</i></a>
+    </div>
+</div>
+</body>
+
+</html>
