@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bgc-orange {
   background-color: #f36e4b; }
 
@@ -282,54 +283,55 @@ h6 {
     position: absolute;
     height: 100%;
     right: 0; }
-  .hfirst-row .modal-connect--signup, .hfirst-row .modal-connect--signin {
-    position: fixed;
-    height: 275px;
-    max-width: 610px;
-    overflow: hidden;
-    top: 300px;
-    left: 30%; }
-    .hfirst-row .modal-connect--signup .modal-content, .hfirst-row .modal-connect--signin .modal-content {
-      padding: 20px; }
-  .hfirst-row .modal-connect__first {
-    border-right: 1px solid #ddd;
-    margin-top: 5px;
-    padding: 15px 20px 5px 35px; }
-    .hfirst-row .modal-connect__first input {
-      margin-bottom: 10px;
-      padding: 17px 13px 15px; }
-      .hfirst-row .modal-connect__first input[type="checkbox"] {
-        margin: 0 5px 0 20px; }
-  .hfirst-row .modal-connect__secon {
-    padding: 10px 0 10px 25px; }
-    .hfirst-row .modal-connect__secon p {
-      margin-top: 15px; }
-    .hfirst-row .modal-connect__secon .btn {
-      text-align: left;
-      width: 75%;
-      color: #fff;
-      font-size: 13px;
-      padding: 8px 12px 9px 9px; }
-      .hfirst-row .modal-connect__secon .btn i {
-        border-right: 1px solid #c2c2c2;
-        margin: -7px 10px -10px -5px;
-        font-size: 16px;
-        padding: 10px 15px 10px 10px; }
-        .hfirst-row .modal-connect__secon .btn i.fa-twitter {
-          padding: 10px 10px 10px 8px; }
-      .hfirst-row .modal-connect__secon .btn.btn-face {
-        background-color: #5c6f99; }
-      .hfirst-row .modal-connect__secon .btn.btn-twitch {
-        background-color: #4ec0e9; }
-  .hfirst-row .modal-connect__span, .hfirst-row .modal-connect__link {
-    color: #23a1f1;
-    text-decoration: underline; }
-  .hfirst-row .modal-connect__buttonf {
-    background-image: linear-gradient(to bottom, #fef7c9, #ffe554);
-    outline: none;
-    border-radius: 10px;
-    border: 2px solid #f6ca32;
-    padding: 10px 50px; }
+
+.modal-connect--signup, .modal-connect--signin {
+  position: fixed;
+  height: 275px;
+  max-width: 610px;
+  overflow: hidden;
+  top: 300px;
+  left: 30%; }
+  .modal-connect--signup .modal-content, .modal-connect--signin .modal-content {
+    padding: 20px; }
+.modal-connect__first {
+  border-right: 1px solid #ddd;
+  margin-top: 5px;
+  padding: 15px 20px 5px 35px; }
+  .modal-connect__first input {
+    margin-bottom: 10px;
+    padding: 17px 13px 15px; }
+    .modal-connect__first input[type="checkbox"] {
+      margin: 0 5px 0 20px; }
+.modal-connect__secon {
+  padding: 10px 0 10px 25px; }
+  .modal-connect__secon p {
+    margin-top: 15px; }
+  .modal-connect__secon .btn {
+    text-align: left;
+    width: 75%;
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 12px 9px 9px; }
+    .modal-connect__secon .btn i {
+      border-right: 1px solid #c2c2c2;
+      margin: -7px 10px -10px -5px;
+      font-size: 16px;
+      padding: 10px 15px 10px 10px; }
+      .modal-connect__secon .btn i.fa-twitter {
+        padding: 10px 10px 10px 8px; }
+    .modal-connect__secon .btn.btn-face {
+      background-color: #5c6f99; }
+    .modal-connect__secon .btn.btn-twitch {
+      background-color: #4ec0e9; }
+.modal-connect__span, .modal-connect__link {
+  color: #23a1f1;
+  text-decoration: underline; }
+.modal-connect__buttonf {
+  background-image: linear-gradient(to bottom, #fef7c9, #ffe554);
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid #f6ca32;
+  padding: 10px 50px; }
 
 .course-exam {
   position: relative; }
@@ -756,5 +758,95 @@ h6 {
       border-radius: 10px;
       border: 1px solid #f6ca32;
       padding: 10px; }
+
+.news-detail {
+  position: relative; }
+  .news-detail--content {
+    padding: 15px 25px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #eeeeee;
+    margin-bottom: 30px; }
+    .news-detail--content h6 {
+      font-size: 20px;
+      font-weight: bold; }
+  .news-detail__tag {
+    margin: 25px 0 30px; }
+    .news-detail__tag div {
+      display: inline-block; }
+    .news-detail__tag .item {
+      background-color: #ebebeb;
+      padding: 4px 6px;
+      color: #959595;
+      font-size: 13px; }
+  .news-detail--semi {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #eeeeee;
+    padding: 10px 10px 20px; }
+    .news-detail--semi h6 {
+      font-size: 16px;
+      text-align: center; }
+  .news-detail__img {
+    float: left;
+    width: 47%;
+    margin-right: 3%; }
+    .news-detail__img img {
+      width: 100%;
+      height: auto; }
+  .news-detail__ctnews {
+    width: 50%;
+    float: left; }
+    .news-detail__ctnews .fontw-nor {
+      color: #e55630;
+      margin: 5px 0 10px;
+      font-weight: 500;
+      font-size: 16px; }
+  .news-detail--list {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #eeeeee;
+    padding: 20px; }
+    .news-detail--list input[type="search"] {
+      width: 100%;
+      border-radius: 20px;
+      font-size: 13px;
+      height: 32px; }
+    .news-detail--list .btn-search {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: none;
+      border: 0;
+      outline: none;
+      color: #c0c0c0; }
+  .news-detail__titlist {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px; }
+  .news-detail__item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+    color: #23a1f1;
+    font-weight: 500; }
+    .news-detail__item::before {
+      font-weight: bold;
+      content: "•";
+      font-size: 15px; }
+    .news-detail__item.color-red {
+      color: #f36e4b; }
+    .news-detail__item:last-child {
+      border: 0; }
+  .news-detail__itemsecon {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px; }
+    .news-detail__itemsecon.color-red {
+      color: #f36e4b; }
+    .news-detail__itemsecon:last-child {
+      border: 0; }
 
 /*# sourceMappingURL=modules.css.map */
