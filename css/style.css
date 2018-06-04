@@ -1043,8 +1043,6 @@ h6 {
     font-size: 18px; }
 .course-detail--contentvideo {
   width: 100%; }
-.course-detail--contentcomment {
-  display: none; }
 .course-detail--video {
   width: 100%;
   padding: 0 10px; }
@@ -1101,6 +1099,27 @@ h6 {
       cursor: pointer; }
       .course-detail--subul li p.fontw-bold:hover {
         text-decoration: underline; }
+.course-detail--contentcomment {
+  display: none;
+  min-height: 200px; }
+  .course-detail--contentcomment .no-comment {
+    text-align: center;
+    color: #9b9b9b;
+    font-size: 16px;
+    margin: 20px; }
+.course-detail__textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  height: 80px; }
+.course-detail__discuss .item {
+  margin-top: 15px; }
+  .course-detail__discuss .item .fontw-bold span {
+    font-weight: 400; }
+  .course-detail__discuss .item .comment-like {
+    margin-right: 10px; }
+  .course-detail__discuss .item .comment-answer {
+    cursor: pointer; }
 .course-detail--book-semi {
   position: relative; }
 .course-detail__tittle {
