@@ -18,4 +18,20 @@ $(document).ready(function () {
         $('video source').attr('src', source);
         $('video')[0].load();
     });
+
+    $('.content-comment').click(function () {
+        $('.text-tittle .div-border').removeClass('active');
+        $(this).addClass('active');
+        $('.course-detail--contentcomment').show();
+        $('.course-detail--contentvideo').hide();
+
+    });
+
+    $('.content-video').click(function () {
+        $('.text-tittle .div-border').removeClass('active');
+        $(this).addClass('active');
+        $('.course-detail--contentcomment').hide();
+        $('.course-detail--contentvideo').show();
+
+    });
 });

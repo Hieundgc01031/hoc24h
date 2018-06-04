@@ -1043,6 +1043,8 @@ h6 {
     font-size: 18px; }
 .course-detail--contentvideo {
   width: 100%; }
+.course-detail--contentcomment {
+  display: none; }
 .course-detail--video {
   width: 100%;
   padding: 0 10px; }
@@ -1106,14 +1108,19 @@ h6 {
   .course-detail__tittle .text-tittle {
     width: 50%;
     margin: 0 auto; }
-    .course-detail__tittle .text-tittle .border-bottom {
+    .course-detail__tittle .text-tittle .div-border {
       font-weight: 700;
       float: left;
-      border-bottom: 1px solid #ccc;
       padding: 0 0 5px 0;
       margin: 0 20px 15px;
-      color: #cbcbcb; }
-      .course-detail__tittle .text-tittle .border-bottom.active {
+      color: #cbcbcb;
+      cursor: pointer; }
+      .course-detail__tittle .text-tittle .div-border .div-line-h {
+        width: 45px;
+        margin: 0 auto;
+        height: 1px;
+        background-color: #ccc; }
+      .course-detail__tittle .text-tittle .div-border.active {
         color: #000; }
 .course-detail--buycourse {
   background-color: #fff;

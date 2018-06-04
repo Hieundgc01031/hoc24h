@@ -1023,6 +1023,9 @@
   &--contentvideo{
     width: 100%;
   }
+  &--contentcomment{
+    display: none;
+  }
   &--video{
     width: 100%;
     padding: 0 10px;
@@ -1114,13 +1117,19 @@
     .text-tittle{
       width: 50%;
       margin: 0 auto;
-      .border-bottom{
+      .div-border{
         font-weight: 700;
         float: left;
-        border-bottom: 1px solid #ccc;
         padding: 0 0 5px 0;
         margin: 0 20px 15px;
         color: #cbcbcb;
+        cursor: pointer;
+        .div-line-h{
+          width: 45px;
+          margin: 0 auto;
+          height: 1px;
+          background-color: #ccc;
+        }
         &.active{
           color: #000;
         }
