@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>COURSE DETAIL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/basejs.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script src="js/course-detail.js"></script>
+</head>
+<body>
+
+<header class="container-fluid">
+    <div class="row first-header">
+        <div class="container text-center m-navbar">
+            <span class="m-navbar--openmenu float-left">
+                ☰
+            </span>
+            <a href="m-index.html"><img class="m-logo" src="img/bgc/logo_vtest.png"/></a>
+            <span class="float-right m-navbar--user usercon--signin">
+                <i class="far fa-user"></i>
+            </span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="m-navbar--modalmenu">
+        </div>
+        <div class="m-navbar--menu">
+            <ul class="m-navbar--firstul">
+                <li class="firstli">
+                    <a href="m-index.html">
+                        trang chủ
+                    </a>
+                </li>
+                <li class="firstli">
+                    <a href="#">
+                        giới thiệu
+                    </a>
+                </li>
+                <li class="firstli">
+                    <a href="#">
+                        khóa học
+                    </a>
+                </li>
+                <li class="firstli">
+                    <a href="#">
+                        tự luyện
+                    </a>
+                </li>
+                <li class="firstli">
+                    <a href="#">
+                        tài liệu
+                    </a>
+                </li>
+                <li class="firstli">
+                    <a href="#">
+                        blog
+                    </a>
+                </li>
+                <li class="firstli">
+                    <ul class="seconul">
+                        <div class="m-navbar--seconul__tittle">
+                            DANH MỤC
+                        </div>
+                        <li class="seconli">
+                            <div class="m-navbar--thirdul__tittle" >Toán học</div>
+                            <ul class="thirdul">
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                            </ul>
+                        </li>
+                        <li class="seconli">
+                            <div class="m-navbar--thirdul__tittle" >Toán học</div>
+                            <ul class="thirdul">
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--  MODAL SIGNIN SGIN UP -->
+        <div class=" modal-connect">
+            <div class="modal-connect--signup modal fade" role="dialog" id="modal-signup">
+                <div class="modal-diaglog">
+                    <div class="modal-content">
+                        <div class="text-center fontw-bold">Đăng ký</div>
+                        <div class="col-xs-12 col-sm-6 modal-connect__first" >
+                            <form >
+                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="password" class="form-control" placeholder="Mật khẩu">
+                                <input type="password" class="form-control" placeholder="Nhập lại mật khẩu">
+                                <button class="modal-connect__buttonf fontw-bold">
+                                    Đăng ký
+                                </button>
+                            </form>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 modal-connect__secon">
+                            <p>Nếu bạn đã có tài khoản hãy <span class="modal-connect__span  usercon--signin c-pointer">đăng nhập</span>
+                            </p>
+                            <p>Hoặc dùng:</p>
+                            <p>
+                                <a class="btn btn-face fontw-bold"><i class="fab fa-facebook-f"></i>Sign-in with Facebook</a>
+                            </p>
+
+                            <p>
+                                <a class="btn btn-twitch fontw-bold"><i class="fab fa-twitter"></i>Sign-in with Twiter</a>
+                            </p>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-connect--signin modal fade" role="dialog" id="modal-signin">
+                <div class="modal-diaglog">
+                    <div class="modal-content">
+                        <p class="text-center fontw-bold">Đăng nhập</p>
+                        <div class="col-xs-12 col-sm-6 modal-connect__first" >
+                            <form>
+                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="password" class="form-control" placeholder="Mật khẩu">
+                                <p><a href="#" class="modal-connect__link">Quên mật khẩu</a>
+                                    <input type="checkbox" value="">Lưu mật khẩu
+                                </p>
+                                <button class="modal-connect__buttonf fontw-bold">
+                                    Đăng nhập
+                                </button>
+                            </form>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 modal-connect__secon">
+                            <p>Nếu bạn chưa có tài khoản hãy <span class="modal-connect__span usercon--signup c-pointer">đăng ký</span>
+                            </p>
+                            <p>Hoặc dùng:</p>
+
+                            <p>
+                                <a class="btn btn-face fontw-bold"><i class="fab fa-facebook-f"></i>Sign-in with Facebook</a>
+                            </p>
+
+                            <p>
+                                <a class="btn btn-twitch fontw-bold"><i class="fab fa-twitter"></i>Sign-in with Twiter</a>
+                            </p>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  MODAL SIGNIN SGIN UP -->
+
+</header>
+
+<section class="first-slide">
+    <div class="main-slide" style="background: url('img/bgc/bgrhome.png') no-repeat;background-size: cover;">
+        <img class="width100" src="img/slide/slide1.png" alt="">
+
+    </div>
+</section>
+
+<section class="wrap-content wrap-content-cart">
+    <div class="container-fluid">
+        <div class="row hbook hbook-list" >
+            <div class="container">
+                <p class="book-detail--tittle hbook-list--tittle course-tittle-rep">
+                    <a href="index.html">Trang chủ</a>
+                    <span>/</span>
+                    <a href="#">Lớp 3</a>
+                    <span>/</span>
+                    <span class="color-blue">Sinh học</span>
+                </p>
+                <div class="clearfix"></div>
+                <div class="news-detail">
+                    <div class="course-detail">
+                        <div class="col-md-8 course-detail--main">
+                            <h6>Khoá chinh phục kiến thức môn toán 11 - khóa 2019</h6>
+                            <div class="course-detail__tittle">
+                                <div class="text-tittle">
+                                    <div class="div-border active content-video">
+                                        <p>Nội dung khóa học</p>
+                                        <div class="div-line-h"></div>
+                                    </div>
+                                    <div class="div-border content-comment">
+                                        <p>Bình luận</p>
+                                        <div class="div-line-h"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="course-detail--contentvideo">
+                                <div class="course-detail--video">
+                                    <video id="video"  controls>
+                                        <source src="video/video1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                <ul class="course-detail--ul">
+                                    <li class="course-detail--li active">
+                                        <div class="course-detail__ptittle">
+                                            Chương 1
+                                            <i class="fas fa-chevron-up"></i>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+
+                                        <ul class="course-detail--subul">
+                                            <li>
+                                                <p class="fontw-bold p-getvideo" data-id="video/video2.mp4"><i class="fas fa-adjust"></i> Bài 1</p>
+                                                <p class="float-left"><i class="fas fa-play-circle"></i> 30 phút</p>
+                                                <p class="float-right"> Ngày phát hành: 12h02 - 26/5/2017</p>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <p class="fontw-bold p-getvideo" data-id="video/video1.mp4"><i class="fas fa-adjust"></i> Bài 1</p>
+                                                <p class="float-left"><i class="fas fa-play-circle"></i> 30 phút</p>
+                                                <p class="float-right"> Ngày phát hành: 12h02 - 26/5/2017</p>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <p class="fontw-bold p-getvideo" data-id="video/video2.mp4"><i class="fas fa-pencil-alt"></i> Bài 1</p>
+                                                <p class="float-left"><i class="fas fa-play-circle"></i> 30 phút</p>
+                                                <p class="float-right">Ngày phát hành: 12h02 - 26/5/2017</p>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="course-detail--li">
+                                        <div class="course-detail__ptittle">
+                                            Chương 2
+                                            <i class="fas fa-chevron-up"></i>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <ul class="course-detail--subul">
+                                            <li>
+                                                <p class="fontw-bold p-getvideo" data-id="video/video1.mp4"><i class="fas fa-adjust"></i> Bài 1</p>
+                                                <p class="float-left"><i class="fas fa-play-circle"></i> 30 phút</p>
+                                                <p class="float-right">Ngày phát hành: 12h02 - 26/5/2017</p>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <p class="fontw-bold p-getvideo" data-id="video/video2.mp4"><i class="fas fa-adjust"></i> Bài 1</p>
+                                                <p class="float-left"><i class="fas fa-play-circle"></i> 30 phút</p>
+                                                <p class="float-right">Ngày phát hành: 12h02 - 26/5/2017</p>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <p class="fontw-bold p-getvideo" data-id="video/video1.mp4><i class="fas fa-pencil-alt"></i> Bài 1</p>
+                                                <p class="float-left"><i class="fas fa-play-circle"></i> 30 phút</p>
+                                                <p class="float-right">Ngày phát hành: 12h02 - 26/5/2017</p>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!--    COMMENT    -->
+                            <div class="course-detail--contentcomment">
+                                <p class="no-comment">Chưa có bình luận nào</p>
+                                <textarea placeholder="Đặt câu hỏi" class="course-detail__textarea"></textarea>
+                                <div class="course-detail__discuss">
+                                    <div class="item">
+                                        <p class="fontw-bold">Nguyễn Thanh Sơn - <span>25 tháng 5, 2019</span></p>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <p>
+                                            <span class="comment-like active ">
+                                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            <span class="number-like">2</span> <span>Thích</span>
+                                            </span>
+                                            <span class="comment-answer">
+                                            <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                            1 Trả lời
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      <!--  col-md-8  -->
+
+                        <div class="col-md-4 rep-pdl-0">
+                            <div class="course-detail--buycourse">
+                                <p class="color-green">
+                                    <span class="float-left"><i class="fas fa-flag"></i>Trình độ</span>
+                                    <span class="float-right fontw-bold">Lớp 3</span>
+                                    <span class="clearfix"></span>
+                                </p>
+                                <p class="color-green">
+                                    <span class="float-left"><i class="fas fa-briefcase"></i>Môn học</span>
+                                    <span class="float-right fontw-bold">Toán học</span>
+                                    <span class="clearfix"></span>
+                                </p>
+                                <p class="text-center price-course">
+                                    <span><i class="far fa-money-bill-alt"></i> Học phí </span>
+                                    <span class="fontw-bold">
+                                        40.000VNĐ
+                                    </span>
+
+                                </p>
+                                <p class="text-decoline">50.000VNĐ</p>
+                                <button class="btn btn-regis">
+                                    Đăng ký học
+                                </button>
+                                <a>Dùng mã khuyến mại</a>
+                                <button class="btn btn-buybycode">
+                                    <p> Đăng ký mua chung</p>
+                                    <span>(Giảm đến 80%)</span>
+                                </button>
+                            </div>
+
+                            <div class="course-detail--teacher">
+                                <div class="float-left img-teacher">
+                                    <img src="img/book/teacher.png"/>
+                                </div>
+                                <div class="float-left text-teacher">
+                                    <p class="fontw-bold">Tác giả</p>
+                                    <a >Thầy Dương Văn Cẩn</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="course-detail--semi">
+                                <h6>Khoá học liên quan</h6>
+                                <ul>
+                                    <li>
+                                        <div class="float-left img-coursesemi">
+                                            <img src="img/book/course.png" height="79" width="79"/>
+                                        </div>
+                                        <div class="float-left text-coursesemi">
+                                            <p class="fontw-bold">KHOÁ SUPER-1: LUYỆN THI THPT QG</p>
+                                            <a class="fontw-nor">Thầy Dương Văn Cẩn</a>
+                                            <p class="color-orange">Học phí: 800.000đ</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </li>
+                                    <li>
+                                        <div class="float-left img-coursesemi">
+                                            <img src="img/book/course.png" height="79" width="79"/>
+                                        </div>
+                                        <div class="float-left text-coursesemi">
+                                            <p class="fontw-bold">KHOÁ SUPER-1: LUYỆN THI THPT QG</p>
+                                            <a class="fontw-nor">Thầy Dương Văn Cẩn</a>
+                                            <p>Học phí: 800.000đ</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </li>
+                                </ul>
+                            </div>      <!--  course-detail--semi  -->
+                        </div>      <!-- col-md-3 -->
+                    </div>      <!-- row -->
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="course-detail--book-semi">
+                    <h6>
+                        Sách liên quan
+                    </h6>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 mrb-10">
+                            <div class="hbook--item ">
+                                <div class="hbook__img">
+                                    <a href="book-list.html" class="text-center">
+                                        <img src="img/slide/book1.png"/>
+                                    </a>
+                                </div>
+                                <div class="pdlr-15">
+                                    <a href="#" class="hbook__name">
+                                        CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                    </a>
+                                    <a href="#" class="hbook__writer">
+                                        Thầy Dương Văn Cẩn
+                                    </a>
+                                    <p class="hbook__fee">
+                                        Giá: <span>800.000.000đ</span>
+                                    </p>
+                                </div>
+                            </div>      <!--book--item-->
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 mrb-10">
+                            <div class="hbook--item ">
+                                <div class="hbook__img">
+                                    <a href="#" class="text-center">
+                                        <img src="img/slide/book1.png"/>
+                                    </a>
+                                </div>
+                                <div class="pdlr-15">
+                                    <a href="#" class="hbook__name">
+                                        CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                    </a>
+                                    <a href="#" class="hbook__writer">
+                                        Thầy Dương Văn Cẩn
+                                    </a>
+                                    <p class="hbook__fee">
+                                        Giá: <span>800.000.000đ</span>
+                                    </p>
+                                </div>
+                            </div>      <!--book--item-->
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 mrb-10">
+                            <div class="hbook--item ">
+                                <div class="hbook__img">
+                                    <a href="#" class="text-center">
+                                        <img src="img/slide/book1.png"/>
+                                    </a>
+                                </div>
+                                <div class="pdlr-15">
+                                    <a href="#" class="hbook__name">
+                                        CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                    </a>
+                                    <a href="#" class="hbook__writer">
+                                        Thầy Dương Văn Cẩn
+                                    </a>
+                                    <p class="hbook__fee">
+                                        Giá: <span>800.000.000đ</span>
+                                    </p>
+                                </div>
+                            </div>      <!--book--item-->
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 mrb-10">
+                            <div class="hbook--item ">
+                                <div class="hbook__img">
+                                    <a href="#" class="text-center">
+                                        <img src="img/slide/book1.png"/>
+                                    </a>
+                                </div>
+                                <div class="pdlr-15">
+                                    <a href="#" class="hbook__name">
+                                        CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                    </a>
+                                    <a href="#" class="hbook__writer">
+                                        Thầy Dương Văn Cẩn
+                                    </a>
+                                    <p class="hbook__fee">
+                                        Giá: <span>800.000.000đ</span>
+                                    </p>
+                                </div>
+                            </div>      <!--book--item-->
+                        </div>
+                    </div>      <!-- row -->
+                </div>      <!--  course-detail--book-semi  -->
+            </div>      <!-- container  -->
+
+        </div>  <!--  hbook  -->
+    </div>
+
+</section>
+
+<footer class="container-fluid footer">
+    <div class="row">
+        <div class="container footer--container">
+            <div class="foooter-content row">
+                <div class="footer--first col-md-3 col-sm-4 col-xs-12">
+                    <p>Công Ty TNHH ....</p>
+                    <p>Nhà máy 1 : Lô 38D - Nhà máy 2 : Lô 49D</p>
+                    <p>Khu Công Nghiệp Quang Minh</p>
+                    <p>Thị trấn Quang Minh , Huyện Mê Linh</p>
+                    <p>Hà Nội, Việt Nam</p>
+                </div>
+                <div class="footer--third col-sm-4 col-xs-12">
+                    <p>THEO DÕI CHÚNG TÔI</p>
+                    <p class="footer--i">
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">
+                            <img src="img/icon/protected.png" height="20" width="97"/>
+                        </a>
+                    </p>
+                </div>
+                <div class="footer--four col-sm-4 col-xs-12">
+                    <img src="img/icon/map.png" />
+                </div>
+                <div class="clearfix"></div>
+                <p class="text-center footer--end">Đăng ký hoạt động số 01020716/ĐKHD-STP, do Sở Tư pháp thành phố Hà Nội cấp ngày 13/09/2011</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="money-learn">
+    <div class="first-item item">
+        <a href="#"><i>Hướng dẫn học online</i></a>
+    </div>
+    <div class="secon-item item">
+        <a href="#"><i>Hướng dẫn nạp tiền</i></a>
+    </div>
+</div>
+</body>
+
+</html>

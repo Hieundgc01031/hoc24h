@@ -163,6 +163,23 @@
     }
 
   }
+
+  //COURSE DETAILS
+  .course-detail{
+    &--main{
+      h6{
+        font-size: 18px;
+        margin: 5px 0 15px;
+      }
+    }
+     .rep-pdl-0{
+       padding-left: 0;
+     }
+  }
+  .course-tittle-rep{
+    margin: 10px 0;
+    font-weight: 500;
+  }
 }
 
 @media all and (max-width: 768px) and (min-width: 480px){
@@ -375,6 +392,28 @@
       }
     }
 
+  }
+
+  //COURSE DETAILS
+  .course-detail{
+    &--main{
+      h6{
+        font-size: 16px;
+        margin: 5px 0 15px;
+      }
+    }
+    &__tittle {
+      .text-tittle{
+        width: 60%;
+      }
+    }
+    .rep-pdl-0{
+      padding-left: 0;
+    }
+  }
+  .course-tittle-rep{
+    margin: 10px 0;
+    font-weight: 500;
   }
 }
 
@@ -605,6 +644,46 @@
       }
     }
 
+  }
+
+  //COURSE DETAILS
+  .course-detail{
+    &--main{
+      h6{
+        font-size: 16px;
+        margin: 5px 0 15px;
+      }
+    }
+    &__tittle {
+      .text-tittle{
+        width: 100%;
+      }
+    }
+    .rep-pdl-0{
+      padding-left: 0;
+    }
+    .course-detail--book-semi{
+      margin-top: 20px;
+      h6{
+        font-size: 20px;
+      }
+    }
+  }
+  .img-coursesemi{
+    width: 30% !important;
+  }
+  .text-coursesemi{
+    width: 65% !important;
+  }
+  .course-tittle-rep{
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  .course-detail--book-semi{
+    h6{
+      font-size: 20px;
+      margin-top: 10px;
+    }
   }
 }
 
@@ -851,5 +930,42 @@
       }
     }
 
+  }
+
+  //COURSE DETAILS
+  .course-detail{
+    &--main{
+      h6{
+        font-size: 16px;
+        margin: 5px 0 15px;
+      }
+    }
+    &__tittle {
+      .text-tittle{
+        width: 100%;
+      }
+    }
+    .rep-pdl-0{
+      padding-left: 0;
+    }
+  }
+  .course-tittle-rep{
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  .img-coursesemi{
+    width: 30% !important;
+  }
+  .text-coursesemi{
+    width: 65% !important;
+  }
+  .course-detail__tittle .text-tittle .div-border{
+    margin-right: 10px;
+  }
+  .course-detail--book-semi{
+    margin-top: 20px;
+    h6{
+      font-size: 20px;
+    }
   }
 }

@@ -96,7 +96,17 @@
     text-align: center; }
     .cart-content__price .book-detail__number .border-buy {
       display: inline-block !important;
-      margin-right: 5px; } }
+      margin-right: 5px; }
+
+  .course-detail--main h6 {
+    font-size: 18px;
+    margin: 5px 0 15px; }
+  .course-detail .rep-pdl-0 {
+    padding-left: 0; }
+
+  .course-tittle-rep {
+    margin: 10px 0;
+    font-weight: 500; } }
 @media all and (max-width: 768px) and (min-width: 480px) {
   .m-navbar img {
     max-width: 100px;
@@ -233,7 +243,19 @@
     text-align: center; }
     .cart-content__price .book-detail__number .border-buy {
       display: inline-block !important;
-      margin-right: 5px; } }
+      margin-right: 5px; }
+
+  .course-detail--main h6 {
+    font-size: 16px;
+    margin: 5px 0 15px; }
+  .course-detail__tittle .text-tittle {
+    width: 60%; }
+  .course-detail .rep-pdl-0 {
+    padding-left: 0; }
+
+  .course-tittle-rep {
+    margin: 10px 0;
+    font-weight: 500; } }
 @media all and (max-width: 480px) and (min-width: 321px) {
   .m-navbar img {
     max-width: 80px;
@@ -385,7 +407,33 @@
     text-align: center; }
     .cart-content__price .book-detail__number .border-buy {
       display: inline-block !important;
-      margin-right: 5px; } }
+      margin-right: 5px; }
+
+  .course-detail--main h6 {
+    font-size: 16px;
+    margin: 5px 0 15px; }
+  .course-detail__tittle .text-tittle {
+    width: 100%; }
+  .course-detail .rep-pdl-0 {
+    padding-left: 0; }
+  .course-detail .course-detail--book-semi {
+    margin-top: 20px; }
+    .course-detail .course-detail--book-semi h6 {
+      font-size: 20px; }
+
+  .img-coursesemi {
+    width: 30% !important; }
+
+  .text-coursesemi {
+    width: 65% !important; }
+
+  .course-tittle-rep {
+    margin: 10px 0;
+    font-weight: 500; }
+
+  .course-detail--book-semi h6 {
+    font-size: 20px;
+    margin-top: 10px; } }
 @media all and (max-width: 320px) {
   .m-navbar img {
     max-width: 80px;
@@ -545,6 +593,32 @@
     text-align: center; }
     .cart-content__price .book-detail__number .border-buy {
       display: inline-block !important;
-      margin-right: 5px; } }
+      margin-right: 5px; }
+
+  .course-detail--main h6 {
+    font-size: 16px;
+    margin: 5px 0 15px; }
+  .course-detail__tittle .text-tittle {
+    width: 100%; }
+  .course-detail .rep-pdl-0 {
+    padding-left: 0; }
+
+  .course-tittle-rep {
+    margin: 10px 0;
+    font-weight: 500; }
+
+  .img-coursesemi {
+    width: 30% !important; }
+
+  .text-coursesemi {
+    width: 65% !important; }
+
+  .course-detail__tittle .text-tittle .div-border {
+    margin-right: 10px; }
+
+  .course-detail--book-semi {
+    margin-top: 20px; }
+    .course-detail--book-semi h6 {
+      font-size: 20px; } }
 
 /*# sourceMappingURL=responsive.css.map */
