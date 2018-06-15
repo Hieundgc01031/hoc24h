@@ -57,6 +57,12 @@ h6 {
 .mrb-0 {
   margin-bottom: 0; }
 
+.mrb-10 {
+  margin-bottom: 10px; }
+
+.mrb-15 {
+  margin-bottom: 15px; }
+
 .mrt-25 {
   margin-top: 25px; }
 
@@ -81,10 +87,14 @@ h6 {
 .mrt-85 {
   margin-top: 85px; }
 
+.pdb-20 {
+  padding-bottom: 20px; }
+
 .pdb-85px {
   padding-bottom: 85px; }
 
 .first-header {
+  position: relative;
   background: linear-gradient(to right, #2491d6, #87cbf5, #2491d6);
   padding: 10px 0; }
   .first-header .hcontact {
@@ -1093,5 +1103,61 @@ h6 {
   padding-top: 35px; }
 .course-list--item {
   margin-bottom: 30px; }
+
+.m-navbar img {
+  max-width: 120px;
+  height: auto; }
+.m-navbar--openmenu {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0; }
+.m-navbar--user {
+  color: #fff;
+  font-size: 28px;
+  padding: 10px 0; }
+.m-navbar--modalmenu {
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 20; }
+.m-navbar--modalmenu {
+  visibility: hidden;
+  opacity: 0; }
+.m-navbar--menu {
+  width: 75%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 21; }
+  .m-navbar--menu img {
+    max-width: 140px;
+    margin: 0 auto; }
+  .m-navbar--menu .m-navbar--firstul {
+    padding: 15px; }
+    .m-navbar--menu .m-navbar--firstul li {
+      text-transform: uppercase;
+      display: list-item;
+      list-style: none; }
+      .m-navbar--menu .m-navbar--firstul li.firstli {
+        padding: 6px 0;
+        border-bottom: 1px solid #ccc; }
+        .m-navbar--menu .m-navbar--firstul li.firstli:last-child {
+          border: 0 !important; }
+        .m-navbar--menu .m-navbar--firstul li.firstli .seconul .seconli {
+          padding: 5px 10px 0; }
+          .m-navbar--menu .m-navbar--firstul li.firstli .seconul .seconli .thirdul {
+            display: none; }
+            .m-navbar--menu .m-navbar--firstul li.firstli .seconul .seconli .thirdul li {
+              text-transform: capitalize;
+              padding: 5px 10px;
+              border-bottom: 1px solid #ccc; }
+              .m-navbar--menu .m-navbar--firstul li.firstli .seconul .seconli .thirdul li:last-child {
+                margin-bottom: 5px; }
 
 /*# sourceMappingURL=modules.css.map */

@@ -19,14 +19,19 @@ $(document).ready(function () {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+
+                    arrows:false,
+                    dots: false
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows:false,
+                    dots: false
                 }
             }
 
@@ -72,14 +77,18 @@ $(document).ready(function () {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows:false,
+                    dots: false
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows:false,
+                    dots: false
                 }
             },
             {
@@ -113,14 +122,18 @@ $(document).ready(function () {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows:false,
+                    dots: false
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows:false,
+                    dots: false
                 }
             },
             {
@@ -154,14 +167,18 @@ $(document).ready(function () {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                arrows:false,
+                dots: false
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows:false,
+                    dots: false
                 }
             },
             {
@@ -169,11 +186,14 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: false,
+                    arrows:false,
+                    dots: false
                 }
             }
         ]
     });
+
+
 
 
 });

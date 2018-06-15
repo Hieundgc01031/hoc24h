@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BOOK DETAIL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="js/slick.js"></script>
+    <script src="js/basejs.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script src="js/bookdetail.js"></script>
+</head>
+<body>
+
+<header class="container-fluid">
+    <div class="row first-header">
+        <div class="container text-center m-navbar">
+            <span class="m-navbar--openmenu float-left">
+                ☰
+            </span>
+            <a href="m-index.html"><img class="m-logo" src="img/bgc/logo_vtest.png"/></a>
+            <span class="float-right m-navbar--user usercon--signin">
+                <i class="far fa-user"></i>
+            </span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="m-navbar--modalmenu">
+        </div>
+        <div class="m-navbar--menu">
+            <ul class="m-navbar--firstul">
+                <li class="firstli">
+                    <a href="m-index.html">
+                        trang chủ
+                    </a>
+                </li>
+                <li class="firstli">
+                    <a href="#">
+                        giới thiệu
+                    </a>
+                </li>
+                <li class="firstli">
+                    <a href="#">
+                        khóa học
+                    </a>
+                </li>
+                <li class="firstli">
+                    <a href="#">
+                        tự luyện
+                    </a>
+                </li>
+                <li class="firstli">
+                    <a href="#">
+                        tài liệu
+                    </a>
+                </li>
+                <li class="firstli">
+                    <a href="#">
+                        blog
+                    </a>
+                </li>
+                <li class="firstli">
+                    <ul class="seconul">
+                        <div class="m-navbar--seconul__tittle">
+                            DANH MỤC
+                        </div>
+                        <li class="seconli">
+                            <div class="m-navbar--thirdul__tittle" >Toán học</div>
+                            <ul class="thirdul">
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                            </ul>
+                        </li>
+                        <li class="seconli">
+                            <div class="m-navbar--thirdul__tittle" >Toán học</div>
+                            <ul class="thirdul">
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                                <li><a href="#">Toán lớp 1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--  MODAL SIGNIN SGIN UP -->
+        <div class=" modal-connect">
+            <div class="modal-connect--signup modal fade" role="dialog" id="modal-signup">
+                <div class="modal-diaglog">
+                    <div class="modal-content">
+                        <div class="text-center fontw-bold">Đăng ký</div>
+                        <div class="col-xs-12 col-sm-6 modal-connect__first" >
+                            <form >
+                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="password" class="form-control" placeholder="Mật khẩu">
+                                <input type="password" class="form-control" placeholder="Nhập lại mật khẩu">
+                                <button class="modal-connect__buttonf fontw-bold">
+                                    Đăng ký
+                                </button>
+                            </form>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 modal-connect__secon">
+                            <p>Nếu bạn đã có tài khoản hãy <span class="modal-connect__span  usercon--signin c-pointer">đăng nhập</span>
+                            </p>
+                            <p>Hoặc dùng:</p>
+                            <p>
+                                <a class="btn btn-face fontw-bold"><i class="fab fa-facebook-f"></i>Sign-in with Facebook</a>
+                            </p>
+
+                            <p>
+                                <a class="btn btn-twitch fontw-bold"><i class="fab fa-twitter"></i>Sign-in with Twiter</a>
+                            </p>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-connect--signin modal fade" role="dialog" id="modal-signin">
+                <div class="modal-diaglog">
+                    <div class="modal-content">
+                        <p class="text-center fontw-bold">Đăng nhập</p>
+                        <div class="col-xs-12 col-sm-6 modal-connect__first" >
+                            <form>
+                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="password" class="form-control" placeholder="Mật khẩu">
+                                <p><a href="#" class="modal-connect__link">Quên mật khẩu</a>
+                                    <input type="checkbox" value="">Lưu mật khẩu
+                                </p>
+                                <button class="modal-connect__buttonf fontw-bold">
+                                    Đăng nhập
+                                </button>
+                            </form>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 modal-connect__secon">
+                            <p>Nếu bạn chưa có tài khoản hãy <span class="modal-connect__span usercon--signup c-pointer">đăng ký</span>
+                            </p>
+                            <p>Hoặc dùng:</p>
+
+                            <p>
+                                <a class="btn btn-face fontw-bold"><i class="fab fa-facebook-f"></i>Sign-in with Facebook</a>
+                            </p>
+
+                            <p>
+                                <a class="btn btn-twitch fontw-bold"><i class="fab fa-twitter"></i>Sign-in with Twiter</a>
+                            </p>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  MODAL SIGNIN SGIN UP -->
+
+</header>
+
+<section class="first-slide">
+    <div class="main-slide" style="background: url('img/bgc/bgrhome.png') no-repeat;background-size: cover;">
+        <img class="width100" src="img/slide/slide1.png">
+    </div>
+</section>
+
+<section class="wrap-content">
+    <div class="container book-detail">
+
+        <p class="book-detail--tittle">
+            <a href="index.html">Trang chủ</a>
+            <span>/</span>
+            <a href="#">Lớp 3</a>
+            <span>/</span>
+            <span class="color-blue">Sinh học</span>
+        </p>
+        <div class="book-detail--content">
+
+            <div class="book-detail__img">
+                <div class="book-detail__right">
+                    <img src="img/book/lagb.png"/>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="book-detail__text">
+                <div class="book-detail__name">
+                    <p class="name-book"> Inuyasha - Tập 2 (Bản Đặc Biệt)</p>
+                    <p class="">Tác giả</span>&emsp;&emsp;&nbsp;: <a href="#">Thầy Dương Văn Cẩn</a></p>
+                    <p class="">Danh mục&emsp;: <a href="#">Sinh học</a></p>
+                </div>
+                <div class="book-detail__price">
+                    <p><span class="fontw-bold">54.000 VNĐ</span> <span>Đã có VAT</span></p>
+                    <p>Tiết kiệm: 10%(6000 <span class="text-under">đ</span>)</p>
+                    <p>Giá thị trường 60.000 <span class="text-under">đ</span></p>
+                    <div class="book-detail__number">
+                        <div class="border-buy">
+                            <button class="btn btn-minus"><i class="fas fa-minus"></i></button>
+                            <span class="span-number">1</span>
+                            <button class="btn btn-plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <a href="#" class="btn btn-buybook">
+                            <i class="fas fa-cart-plus"></i> Mua sách
+                        </a>
+                    </div>
+                </div>
+                <div class="book-detail__textcont">
+                    <p>
+                        - Học kèm khóa học "Chìa khóa vàng chinh phục kiến thức" gồm có Video và đề thi lời giải kèm theo
+
+
+                    </p>
+                    <p>
+                        - Ưu đãi cho các lần mua sách tiếp theo tại Nhà sách Hoc24h
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid pdb-20">
+
+        <div class="row hbook" >
+            <div class="container">
+                <h6>
+                    Sách liên quan
+                </h6>
+                <div class="row mrt-30">
+                    <div class="col-sm-4 col-xs-12 mrb-15">
+                        <div class="hbook--item ">
+                            <div class="hbook__img">
+                                <a href="book-list.html" class="text-center">
+                                    <img src="img/slide/book1.png"/>
+                                </a>
+                            </div>
+                            <div class="pdlr-15">
+                                <a href="#" class="hbook__name">
+                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                </a>
+                                <a href="#" class="hbook__writer">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="hbook__fee">
+                                    Giá: <span>800.000.000đ</span>
+                                </p>
+                            </div>
+                        </div>      <!--book--item-->
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12 mrb-15">
+                        <div class="hbook--item ">
+                            <div class="hbook__img">
+                                <a href="#" class="text-center">
+                                    <img src="img/slide/book1.png"/>
+                                </a>
+                            </div>
+                            <div class="pdlr-15">
+                                <a href="#" class="hbook__name">
+                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                </a>
+                                <a href="#" class="hbook__writer">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="hbook__fee">
+                                    Giá: <span>800.000.000đ</span>
+                                </p>
+                            </div>
+                        </div>      <!--book--item-->
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12 mrb-15">
+                        <div class="hbook--item ">
+                            <div class="hbook__img">
+                                <a href="#" class="text-center">
+                                    <img src="img/slide/book1.png"/>
+                                </a>
+                            </div>
+                            <div class="pdlr-15">
+                                <a href="#" class="hbook__name">
+                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                </a>
+                                <a href="#" class="hbook__writer">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="hbook__fee">
+                                    Giá: <span>800.000.000đ</span>
+                                </p>
+                            </div>
+                        </div>      <!--book--item-->
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12 mrb-15">
+                        <div class="hbook--item ">
+                            <div class="hbook__img">
+                                <a href="#" class="text-center">
+                                    <img src="img/slide/book1.png"/>
+                                </a>
+                            </div>
+                            <div class="pdlr-15">
+                                <a href="#" class="hbook__name">
+                                    CÀ PHÊ CÙNG TONY (TÁI BẢN 2017)
+                                </a>
+                                <a href="#" class="hbook__writer">
+                                    Thầy Dương Văn Cẩn
+                                </a>
+                                <p class="hbook__fee">
+                                    Giá: <span>800.000.000đ</span>
+                                </p>
+                            </div>
+                        </div>      <!--book--item-->
+                    </div>
+                </div>      <!-- row -->
+            </div>      <!-- container  -->
+
+        </div>  <!--  hbook  -->
+    </div>
+
+</section>
+
+<footer class="container-fluid footer">
+    <div class="row">
+        <div class="container footer--container">
+            <div class="foooter-content row">
+                <div class="footer--first col-md-3 col-sm-4 col-xs-12">
+                    <p>Công Ty TNHH ....</p>
+                    <p>Nhà máy 1 : Lô 38D - Nhà máy 2 : Lô 49D</p>
+                    <p>Khu Công Nghiệp Quang Minh</p>
+                    <p>Thị trấn Quang Minh , Huyện Mê Linh</p>
+                    <p>Hà Nội, Việt Nam</p>
+                </div>
+                <div class="footer--third col-sm-4 col-xs-12">
+                    <p>THEO DÕI CHÚNG TÔI</p>
+                    <p class="footer--i">
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">
+                            <img src="img/icon/protected.png" height="20" width="97"/>
+                        </a>
+                    </p>
+                </div>
+                <div class="footer--four col-sm-4 col-xs-12">
+                    <img src="img/icon/map.png" />
+                </div>
+                <div class="clearfix"></div>
+                <p class="text-center footer--end">Đăng ký hoạt động số 01020716/ĐKHD-STP, do Sở Tư pháp thành phố Hà Nội cấp ngày 13/09/2011</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="money-learn">
+    <div class="first-item item">
+        <a href="#"><i>Hướng dẫn học online</i></a>
+    </div>
+    <div class="secon-item item">
+        <a href="#"><i>Hướng dẫn nạp tiền</i></a>
+    </div>
+</div>
+</body>
+
+</html>

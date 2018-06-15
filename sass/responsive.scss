@@ -12,6 +12,20 @@
       top: 54%;
     }
   }
+
+  .book-detail{
+    &--content{
+      z-index: 0;
+      padding: 15px;
+    }
+    &__right{
+      width: 100%;
+      img{
+        max-width: 90%;
+        height: auto;
+      }
+    }
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -31,16 +45,811 @@
       top: 56%;
     }
   }
+  .money-learn{
+    .item{
+      width: 70px;
+      height: 70px;
+      margin-top: 10px;
+      padding: 7px 4px;
+      a{
+        font-weight: 500;
+        font-size: 12px;
+      }
+    }
+  }
+  .footer--img{
+    display: none;
+  }
+
+  .book-detail{
+    &--content{
+      z-index: 0;
+      padding: 15px;
+    }
+    &__right{
+      width: 100%;
+      img{
+        max-width: 90%;
+        height: auto;
+      }
+    }
+    &__name{
+      padding: 0 10px 0px;
+      .name-book{
+        font-weight: 500;
+        font-size: 16px;
+
+      }
+    }
+    &__price{
+      padding: 10px 0 10px 10px;
+    }
+    &__number{
+      .border-buy{
+        margin-bottom: 10px;
+        display: block;
+      }
+      .btn-buybook{
+        padding: 10px 40px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+    &__textcont{
+      padding: 10px;
+    }
+  }
+
+
+  //M COURSE LIST
+  .course-list{
+    .hbook-list--tittle{
+      max-width: 100%;
+      p{
+        max-width: 100%;
+      }
+    }
+    &--select{
+      max-width: 100%;
+      font-size: 13px;
+    }
+    &--filter{
+      padding-top: 0;
+      &.hbook-list--filter{
+        margin: 5px 0 10px;
+      }
+    }
+  }
+  .course-exam{
+    &--item{
+      padding-bottom: 5px;
+    }
+    &--name{
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    &__content{
+      margin: 10px 0;
+    }
+    &__line{
+      margin: 0 0 10px 0;
+    }
+  }
+
+  //  CART
+  .cart-content{
+    .book-detail__name{
+      padding-bottom: 0;
+    }
+    &--left{
+      padding: 10px;
+      margin-bottom: 15px;
+      .hbook__img{
+        padding: 0 10px;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+    &__price{
+      text-align: center;
+      .book-detail__number {
+        .border-buy{
+          display: inline-block !important;
+          margin-right: 5px;
+        }
+      }
+    }
+
+  }
 }
 
 @media all and (max-width: 768px) and (min-width: 480px){
+  .m-navbar{
+    img{
+      max-width: 100px;
+      height: auto;
+    }
+    &--menu{
+      img{
+        max-width: 100px;
+        height: auto;
+      }
+    }
+  }
 
+  .course-exam{
+    &--name{
+      font-size: 18px;
+      a{
+        top: 0;
+      }
+    }
+  }
+  .hbook--read{
+    font-size: 18px;
+    margin-top: 30px;
+    a{
+      top: 0;
+    }
+  }
+  .new-test{
+
+    &--name{
+      margin-top: 40px;
+      font-size: 18px;
+      a{
+        top: 0;
+      }
+    }
+    table{
+      margin-bottom: 5px;
+    }
+  }
+  .money-learn{
+    .item{
+      width: 70px;
+      height: 70px;
+      margin-top: 10px;
+      padding: 7px 4px;
+      a{
+        font-weight: 500;
+        font-size: 12px;
+      }
+    }
+  }
+  footer{
+    padding: 30px 15px !important;
+    text-align: center;
+  }
+  .footer--img{
+    display: none;
+  }
+
+  .modal-connect{
+    &__first{
+      border-right: 0;
+      padding:5px;
+    }
+    &__secon{
+      padding: 5px;
+      p{
+        margin: 10px 0;
+      }
+      .btn{
+        width: 100%;
+      }
+    }
+    &__buttonf{
+      width: 100%;
+    }
+    &--signin{
+      top: 80px;
+      width: 85%;
+      height: auto;
+    }
+    &--signup{
+      top: 80px;
+      width: 85%;
+      height: auto;
+    }
+  }
+  //BOOK LIST
+  .hbook-list{
+    &--tittle{
+      margin: 10px 0;
+    }
+    &--filter{
+      margin: 10px 0;
+    }
+  }
+  .book-list--pagination{
+    margin-bottom: 10px;
+  }
+
+  //  BOOK DETAILS
+  .book-detail{
+    &--content{
+      z-index: 0;
+      padding: 15px;
+    }
+    &__right{
+      width: 100%;
+      img{
+        max-width: 90%;
+        height: auto;
+      }
+    }
+    &__name{
+      padding: 0 10px 0px;
+      .name-book{
+        font-weight: 500;
+        font-size: 16px;
+
+      }
+    }
+    &__price{
+      padding: 10px 0 10px 10px;
+      p{
+        margin-bottom: 5px;
+        .fontw-bold{
+          font-size: 15px;
+        }
+      }
+    }
+    &__number{
+      .border-buy{
+        margin-bottom: 10px;
+        display: block;
+      }
+      .btn-buybook{
+        padding: 10px 40px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+    &__textcont{
+      padding: 10px;
+    }
+  }
+
+  //M COURSE LIST
+  .course-list{
+    .hbook-list--tittle{
+      max-width: 100%;
+      p{
+        max-width: 100%;
+      }
+    }
+    &--select{
+      max-width: 100%;
+      font-size: 13px;
+    }
+    &--filter{
+      padding-top: 0;
+      &.hbook-list--filter{
+        margin: 5px 0 10px;
+      }
+    }
+  }
+  .course-exam{
+    &--item{
+      padding-bottom: 5px;
+    }
+    &--name{
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    &__content{
+      margin: 10px 0;
+    }
+    &__line{
+      margin: 0 0 10px 0;
+    }
+  }
+
+  //  CART
+  .cart-content{
+    .book-detail__name{
+      padding-bottom: 0;
+    }
+    &--left{
+      padding: 10px;
+      margin-bottom: 15px;
+      .hbook__img{
+        padding: 0 10px;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+    &__price{
+      text-align: center;
+      .book-detail__number {
+        .border-buy{
+          display: inline-block !important;
+          margin-right: 5px;
+        }
+      }
+    }
+
+  }
 }
 
 @media all and (max-width: 480px) and (min-width: 321px){
+  .m-navbar{
+    img{
+      max-width: 80px;
+      height: auto;
+    }
+    &--menu{
+      img{
+        max-width: 80px;
+        height: auto;
+      }
+    }
+  }
+  .course-exam{
+    &--name{
+      font-size: 16px;
+      a{
+        top: 0;
+      }
+    }
+  }
+  .hbook--read{
+    font-size: 16px;
+    margin-top: 30px;
+    a{
+      top: 0;
+    }
+  }
+  .new-test{
+    &--name{
+      margin-top: 40px;
+      font-size: 16px;
+      a{
+        top: 0;
+      }
+    }
+    table{
+      margin-bottom: 5px;
+    }
+  }
+  .money-learn{
+    .item{
+      width: 70px;
+      height: 70px;
+      margin-top: 10px;
+      padding: 7px 4px;
+      a{
+        font-weight: 500;
+        font-size: 12px;
+      }
+    }
+  }
+  .a-see-all{
+    display: block;
+    position: relative !important;
+  }
+  .footer--img{
+    display: none;
+  }
+  .footer{
+    padding: 30px 15px !important;
+    text-align: center;
+    &--end{
+      padding: 0 15px;
+      margin-top: 10px;
+    }
+  }
+  .modal-connect{
+    &__first{
+      border-right: 0;
+      padding:5px;
+    }
+    &__secon{
+      padding: 5px;
+      p{
+        margin: 5px 0;
+      }
+      .btn{
+        width: 100%;
+      }
+    }
+    &__buttonf{
+      width: 100%;
+    }
+    &--signin{
+      top: 80px;
+      width: 85%;
+      height: auto;
+    }
+    &--signup{
+      top: 80px;
+      width: 85%;
+      height: auto;
+    }
+  }
 
+  //BOOK LIST
+  .hbook-list{
+    &--tittle{
+      margin: 10px 0;
+    }
+    &--filter{
+      margin: 10px 0;
+    }
+  }
+  .book-list--pagination{
+    margin-bottom: 10px;
+  }
+
+  //  BOOK DETAILS
+  .book-detail{
+    &--content{
+      z-index: 0;
+      padding: 15px;
+      height: auto;
+    }
+    &__img{
+      width: 100%;
+    }
+    &__right{
+      width: 100%;
+      img{
+        max-width: 125px;
+        height: auto;
+      }
+    }
+    &__text{
+      border-left: 0;
+      width: 100%;
+    }
+    &__name{
+      padding: 0 10px 0px;
+      .name-book{
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+    &__price{
+      padding: 10px 0 10px 10px;
+      p{
+        margin-bottom: 5px;
+        .fontw-bold{
+          font-size: 15px;
+        }
+      }
+    }
+    &__number{
+      .border-buy{
+        margin-bottom: 10px;
+        display: block;
+      }
+      .btn-buybook{
+        padding: 10px 40px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+    &__textcont{
+      padding: 10px;
+      font-size: 13px;
+    }
+  }
+
+
+  //M COURSE LIST
+  .course-list{
+    .hbook-list--tittle{
+      max-width: 100%;
+      p{
+        max-width: 100%;
+      }
+    }
+    &--select{
+      max-width: 100%;
+      font-size: 13px;
+    }
+    &--filter{
+      padding-top: 0;
+      &.hbook-list--filter{
+        margin: 5px 0 10px;
+      }
+    }
+  }
+  .course-exam{
+    &--item{
+      padding-bottom: 5px;
+    }
+    &--name{
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    &__content{
+      margin: 10px 0;
+    }
+    &__line{
+      margin: 0 0 10px 0;
+    }
+  }
+
+
+  //  CART
+  .cart-content{
+    .book-detail__name{
+      padding-bottom: 0;
+    }
+    &--left{
+      padding: 10px;
+      margin-bottom: 15px;
+      .hbook__img{
+        padding: 0 10px;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+    &__price{
+      text-align: center;
+      .book-detail__number {
+        .border-buy{
+          display: inline-block !important;
+          margin-right: 5px;
+        }
+      }
+    }
+
+  }
 }
 
 @media all and (max-width: 320px){
+  .m-navbar{
+    img{
+      max-width: 80px;
+      height: auto;
+    }
+    &--menu{
+      img{
+        max-width: 80px;
+        height: auto;
+      }
+    }
+  }
+  .course-exam{
+    &--name{
+      font-size: 16px;
+      a{
+        top: 0;
+      }
+    }
+  }
+  .hbook--read{
+    font-size: 16px;
+    margin-top: 30px;
+    a{
+      top: 0;
+    }
+  }
+  .new-test{
+    &--name{
+      margin-top: 40px;
+      font-size: 16px;
+      a{
+        top: 0;
+      }
+    }
+    table{
+      margin-bottom: 5px;
+    }
+  }
+  .money-learn{
+    .item{
+      width: 70px;
+      height: 70px;
+      margin-top: 10px;
+      padding: 7px 4px;
+      a{
+        font-weight: 500;
+        font-size: 12px;
+      }
+    }
+  }
+  .a-see-all{
+    display: block;
+    position: relative !important;
+  }
 
+  .modal-connect{
+    &__first{
+      border-right: 0;
+      padding:5px;
+    }
+    &__secon{
+      padding: 5px;
+      p{
+        margin: 5px 0;
+      }
+      .btn{
+        width: 100%;
+      }
+    }
+    &__buttonf{
+      width: 100%;
+    }
+    &--signin{
+      top: 80px;
+      width: 85%;
+      height: auto;
+    }
+    &--signup{
+      top: 80px;
+      width: 85%;
+      height: auto;
+    }
+  }
+
+  //BOOK LIST
+  .hbook-list{
+    &--tittle{
+      margin: 10px 0;
+    }
+    &--fillter{
+      margin: 10px 0;
+    }
+  }
+  .book-list--pagination{
+    margin-bottom: 10px;
+  }
+
+  .footer--img{
+    display: none;
+  }
+
+  .footer{
+    padding: 30px 15px !important;
+    text-align: center;
+    &--end{
+      padding: 0 15px;
+      margin-top: 10px;
+    }
+  }
+
+  //  BOOK DETAILS
+  .book-detail{
+    &--content{
+      z-index: 0;
+      padding: 15px;
+      height: auto;
+    }
+    &__img{
+      width: 100%;
+    }
+    &__right{
+      width: 100%;
+      img{
+        max-width: 125px;
+        height: auto;
+      }
+    }
+    &__text{
+      border-left: 0;
+      width: 100%;
+    }
+    &__name{
+      padding: 0 10px 0px;
+      .name-book{
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+    &__price{
+      padding: 10px 0 10px 10px;
+      p{
+        margin-bottom: 5px;
+        .fontw-bold{
+          font-size: 15px;
+        }
+      }
+    }
+    &__number{
+      .border-buy{
+        margin-bottom: 10px;
+        display: block;
+      }
+      .btn-buybook{
+        padding: 10px 40px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+    &__textcont{
+      padding: 10px;
+      font-size: 13px;
+    }
+  }
+
+  //M COURSE LIST
+  .course-list{
+    .hbook-list--tittle{
+      max-width: 100%;
+      p{
+        max-width: 100%;
+      }
+    }
+    &--select{
+      max-width: 100%;
+      font-size: 13px;
+    }
+    &--filter{
+      padding-top: 0;
+      &.hbook-list--filter{
+        margin: 5px 0 10px;
+      }
+    }
+  }
+  .course-exam{
+    &--item{
+      padding-bottom: 5px;
+    }
+    &--name{
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    &__content{
+      margin: 10px 0;
+    }
+    &__line{
+      margin: 0 0 10px 0;
+    }
+  }
+
+//  NEW DETAILS
+  .news-detail{
+    &--content{
+      padding: 15px;
+      h6{
+        font-size: 15px;
+        margin-top: 0;
+      }
+    }
+    &--semi{
+      margin-bottom: 15px;
+    }
+  }
+
+
+//  CART
+  .cart-content{
+    .book-detail__name{
+      padding-bottom: 0;
+    }
+    &--left{
+      padding: 10px;
+      margin-bottom: 15px;
+      .hbook__img{
+        padding: 0 10px;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+    &__price{
+      text-align: center;
+      .book-detail__number {
+        .border-buy{
+          display: inline-block !important;
+          margin-right: 5px;
+        }
+      }
+    }
+
+  }
 }

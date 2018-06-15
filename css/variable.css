@@ -56,6 +56,12 @@ h6 {
 .mrb-0 {
   margin-bottom: 0; }
 
+.mrb-10 {
+  margin-bottom: 10px; }
+
+.mrb-15 {
+  margin-bottom: 15px; }
+
 .mrt-25 {
   margin-top: 25px; }
 
@@ -79,6 +85,9 @@ h6 {
 
 .mrt-85 {
   margin-top: 85px; }
+
+.pdb-20 {
+  padding-bottom: 20px; }
 
 .pdb-85px {
   padding-bottom: 85px; }
